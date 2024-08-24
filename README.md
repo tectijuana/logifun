@@ -50,7 +50,7 @@ Proveer a los estudiantes de las bases teóricas y prácticas necesarias para la
 ### Recursos Adicionales y Material Didáctico
 
 - **Tutoriales en Línea y MOOCs:** Incorporar recursos adicionales como cursos en línea de Coursera, edX, o Udacity.
-- **Bibliografía Actualizada:** Actualizar la bibliografía recomendada.
+- **Bibliografía Actualizada:** Actualizar la bibliografía recomendada y proporcionar eBooks a los estudiantes, libros no mas de 15 años y revistas 5 años de su publicación.
 
 ### Evaluaciones y Retroalimentación
 
@@ -76,6 +76,9 @@ Proveer a los estudiantes de las bases teóricas y prácticas necesarias para la
 - **Unidad 4: Modelo de Programación Lógica**
   - Creación de sistemas expertos básicos y resolución de problemas complejos.
 
-## Conclusión
+## Referencias
 
-Estas recomendaciones pueden ayudar a actualizar y enriquecer el curso, asegurando que los estudiantes adquieran habilidades relevantes y actualizadas en programación lógica y funcional.
+- Pereira, P. A. (2015). Elixir Cookbook: Unleash the full power of programming in Elixir with over 60 incredibly effective recipes. Packt Publishing. ISBN 9781784397517.
+- Cesarini, F., & Thompson, S. (2009). Erlang Programming. O'Reilly Media. ISBN 9780596518189.
+- Cesarini, F., & Vinoski, S. (2016). Designing for Scalability with Erlang/OTP: Implement Robust, Fault-Tolerant Systems. O’Reilly Media. ISBN 9781449320737.
+- St. Laurent, S. (2017). Introducing Erlang: Getting Started in Functional Programming (2nd ed.). O’Reilly Media. ISBN 9781491973370.
