@@ -1,4 +1,4 @@
-```markdown
+
 ### Proyecto 4: Aplicación de Gestión de Tareas con GenServer en Erlang
 
 #### Objetivo del Proyecto
