@@ -1,3 +1,9 @@
+## Proyecto 9: Mnesia Database
+
+En este proyecto, los estudiantes construirán una base de datos distribuida utilizando Mnesia. Este proyecto les permitirá crear, leer, actualizar y borrar registros, proporcionando una comprensión práctica de cómo funciona Mnesia y cómo puede ser utilizado en aplicaciones distribuidas. Los estudiantes aprenderán a configurar la replicación de datos entre nodos, manejar la persistencia en memoria y disco, y explorarán cómo Mnesia puede ser integrada con otros componentes de un sistema basado en Erlang.
+
+
+
 # Uso de Mnesia en el Mundo Real
 
 Mnesia se utiliza en aplicaciones del mundo real, aunque su adopción suele estar limitada a casos específicos donde sus características únicas proporcionan claras ventajas. A continuación, exploraremos cómo y cuándo utilizar Mnesia en aplicaciones prácticas, así como sus principales ventajas y limitaciones.
@@ -48,9 +54,6 @@ Mnesia es particularmente útil en los siguientes escenarios:
 
 - **Falta de herramientas de administración**: A diferencia de las bases de datos comerciales, Mnesia carece de un ecosistema amplio de herramientas de administración, monitoreo y optimización.
 
-## Proyecto 9: Mnesia Database
-
-En este proyecto, los estudiantes construirán una base de datos distribuida utilizando Mnesia. Este proyecto les permitirá crear, leer, actualizar y borrar registros, proporcionando una comprensión práctica de cómo funciona Mnesia y cómo puede ser utilizado en aplicaciones distribuidas. Los estudiantes aprenderán a configurar la replicación de datos entre nodos, manejar la persistencia en memoria y disco, y explorarán cómo Mnesia puede ser integrada con otros componentes de un sistema basado en Erlang.
 
 
 
