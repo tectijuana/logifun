@@ -1,3 +1,4 @@
+```md
 erlang_course_repo/
 │
 ├── README.md              # Descripción general del curso y cómo usar el repo
@@ -26,3 +27,4 @@ erlang_course_repo/
     ├── assignment1/
     ├── assignment2/
     └── ...
+```
