@@ -8,6 +8,11 @@ En este proyecto, los estudiantes construirán una base de datos distribuida uti
 
 Mnesia se utiliza en aplicaciones del mundo real, aunque su adopción suele estar limitada a casos específicos donde sus características únicas proporcionan claras ventajas. A continuación, exploraremos cómo y cuándo utilizar Mnesia en aplicaciones prácticas, así como sus principales ventajas y limitaciones.
 
+Fuente:
+
+  https://www.erlang.org/doc/apps/mnesia/mnesia.html
+
+
 ## ¿Qué es Mnesia?
 
 Mnesia es un sistema de gestión de bases de datos distribuido incluido en Erlang/OTP. Está diseñado para aplicaciones que necesitan:
