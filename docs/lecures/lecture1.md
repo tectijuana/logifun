@@ -1,7 +1,4 @@
-
 ![](https://github.com/user-attachments/assets/448f899b-fa17-4ae8-9859-37ba3640ccaa)
-
-
 
 ### Erlang: Concurrencia y Programación Funcional
 
@@ -38,12 +35,10 @@ En el mundo real, Erlang se elige principalmente por su capacidad de manejar la 
 - **Mensajería y Sistemas de Chat**: Sistemas como WhatsApp utilizan Erlang precisamente porque puede manejar millones de conexiones simultáneas en tiempo real, manteniendo la fiabilidad y la baja latencia.
 
 - **Bases de Datos Distribuidas**: Sistemas de bases de datos como Riak y CouchDB están construidos sobre Erlang debido a su capacidad para manejar la replicación, la consistencia eventual y la recuperación de fallos de manera efectiva.
-- 
-### Motivacion al grupo de ISC
 
 ### Ejemplos de Software Famoso Desarrollado en Erlang
 
-Para cerrar esta lección sobre Erlang, es útil conocer algunos ejemplos de software y plataformas ampliamente utilizadas que se han desarrollado utilizando Erlang. Estos ejemplos demuestran cómo Erlang se utiliza para resolver problemas complejos en el mundo real, especialmente en aplicaciones que requieren alta concurrencia, baja latencia, y alta disponibilidad. A continuación, se presentan algunos de los proyectos más destacados:
+Conocer algunos ejemplos de software y plataformas ampliamente utilizadas que se han desarrollado utilizando Erlang ayuda a entender su relevancia práctica:
 
 #### 1. **WhatsApp**
 
@@ -80,5 +75,3 @@ Erlang y su ecosistema ofrecen un enfoque único y poderoso para construir aplic
 - **Comunicación Transparente entre Nodos**: Erlang facilita la construcción de sistemas distribuidos donde los nodos pueden comunicarse sin problemas, lo que es crucial en arquitecturas modernas basadas en microservicios.
 
 Erlang no es solo un lenguaje de programación; es una poderosa herramienta para construir sistemas robustos y escalables que pueden manejar la presión de millones de usuarios y petabytes de datos. La adopción de Erlang y su ecosistema en empresas líderes es un testimonio de su capacidad para resolver problemas complejos de concurrencia y distribución de manera efectiva. Como ingeniero de sistemas, aprender Erlang te equipará con un conjunto de habilidades valioso y buscado en el desarrollo de software de misión crítica. ¡Explora Erlang y descubre cómo puedes aprovechar su poder para tus propios proyectos!
-
-
