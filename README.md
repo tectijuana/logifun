@@ -82,3 +82,14 @@ Proveer a los estudiantes de las bases teóricas y prácticas necesarias para la
 - Cesarini, F., & Thompson, S. (2009). Erlang Programming. O'Reilly Media. ISBN 9780596518189.
 - Cesarini, F., & Vinoski, S. (2016). Designing for Scalability with Erlang/OTP: Implement Robust, Fault-Tolerant Systems. O’Reilly Media. ISBN 9781449320737.
 - St. Laurent, S. (2017). Introducing Erlang: Getting Started in Functional Programming (2nd ed.). O’Reilly Media. ISBN 9781491973370.
+
+## Utilerias
+- github student pack
+- file.io para subidas anonimas auto borrables
+- ASCII Arte generador https://ascii-generator.site
+
+
+
+
+
+
