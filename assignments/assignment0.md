@@ -1,29 +1,30 @@
 
-## ACTIVIDAD 
+## ACTIVIDAD: contestar cuestionario
 
 
-Tarea sobre los antecedentes de Erlang?
+Tarea sobre los antecedentes de Erlang, las repuestas en el siguiente dos videos segmentados.
 
 
-1. **¿Cuál fue la motivación original detrás del desarrollo de Erlang?**
+1. **¿Quién desarrolló Erlang y en qué década se originó?**
 
-2. **¿Qué empresa desarrolló originalmente Erlang y para qué tipo de sistemas estaba destinado?**
+2. **¿Por qué el lema "let it crash" es importante en el contexto de Erlang?**
 
-3. **¿En qué década se comenzó a desarrollar Erlang, y qué necesidades específicas del sector intentaba abordar?**
+3. **¿Cuál era el objetivo principal detrás de la invención de Erlang según el equipo que lo desarrolló?**
 
-4. **¿Qué problemas específicos de la industria de telecomunicaciones se buscaba resolver con Erlang?**
+4. **¿Qué desafíos enfrentó la industria de telecomunicaciones que llevaron a la creación de Erlang?**
 
-5. **¿Cómo influyó el enfoque de programación funcional en el diseño de Erlang?**
+5. **¿Qué características de Erlang aumentaron la productividad de los programadores en comparación con otros lenguajes de programación como C++ o Java?**
 
-6. **¿Qué características de Erlang lo hacen especialmente adecuado para aplicaciones de telecomunicaciones?**
+6. **¿Cómo maneja Erlang los errores y fallos en comparación con otros lenguajes de programación?**
 
-7. **¿Qué significa el término “tolerancia a fallos” en el contexto de Erlang, y por qué es importante?**
+7. **¿Qué es el concepto de "programar para el caso positivo" y cómo se aplica en Erlang?**
 
-8. **¿Cómo el modelo de actores de Erlang contribuye a la concurrencia y a la gestión de procesos en aplicaciones distribuidas?**
+8. **¿Cómo se crean y gestionan los procesos en Erlang, y qué ventajas ofrece esto para la concurrencia?**
 
-9. **¿Qué papel desempeñaron los árboles de supervisión en la estructura y diseño de Erlang?**
+9. **¿Cuál es la diferencia entre procesos y threads (hilos) en Erlang, y por qué es significativa?**
 
-10. **¿Cuál ha sido el impacto de Erlang en la industria de telecomunicaciones y en otras industrias que requieren alta disponibilidad y concurrencia?**
+10. **¿Cómo permite Erlang la distribución de procesos en diferentes máquinas o núcleos con poca o ninguna modificación en el código?**
+
 
 Repuestas en el siguiente video:
 
