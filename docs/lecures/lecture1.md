@@ -87,6 +87,13 @@ Conocer algunos ejemplos de software y plataformas ampliamente utilizadas que se
 | Slack                       | No             | Emplea una combinación de lenguajes, incluyendo JavaScript (Node.js), para su backend de mensajería.    |
 
 
+## Video:
+
+[![Watch this video](https://img.youtube.com/vi/M7uo5jmFDUw/hqdefault.jpg)](https://youtu.be/M7uo5jmFDUw?si=s__0z49xML5BFDTg)
+
+
+
+
 ## Motivación para Ingenieros de Sistemas con Experiencia en C#, Python, y Otros Lenguajes
 
 Erlang y su ecosistema ofrecen un enfoque único y poderoso para construir aplicaciones que necesitan ser altamente concurrentes, distribuidas y tolerantes a fallos. Para ingenieros de sistemas familiarizados con lenguajes como C# y Python, aprender Erlang puede abrir nuevas oportunidades para trabajar en sistemas de alta disponibilidad y rendimiento. Algunas razones para considerar Erlang son:
