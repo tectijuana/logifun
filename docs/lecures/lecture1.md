@@ -12,7 +12,7 @@
 
 
 
-```markdown
+
 ### Otros Lenguajes del Ecosistema de Erlang en la Máquina Virtual BEAM
 
 El ecosistema de Erlang, debido a su base en la máquina virtual BEAM, ha dado lugar a varios lenguajes de programación diseñados para aprovechar sus capacidades de concurrencia, tolerancia a fallos y distribución. Además de Erlang, existen otros lenguajes que se ejecutan en la máquina virtual BEAM y que están diseñados para diferentes casos de uso o estilos de programación. A continuación, se describen algunos de los lenguajes más destacados del ecosistema de Erlang:
@@ -72,7 +72,5 @@ El ecosistema de Erlang, debido a su base en la máquina virtual BEAM, ha dado l
   - Compilación a BEAM: Los programas en Caramel se compilan a código BEAM, permitiendo que se ejecuten en la misma infraestructura que Erlang y Elixir.
 - **Uso**: Ideal para desarrolladores que desean la seguridad del tipado estático y las características de concurrencia y distribución de BEAM.
 
-### Conclusión
-
 El ecosistema de Erlang es rico y diverso, con varios lenguajes diseñados para ejecutarse en la máquina virtual BEAM. Estos lenguajes ofrecen diferentes características y paradigmas de programación, lo que permite a los desarrolladores elegir el lenguaje que mejor se adapte a sus necesidades mientras se aprovechan de las robustas capacidades de concurrencia, distribución y tolerancia a fallos que proporciona BEAM. Si bien Erlang sigue siendo fundamental en su ecosistema, la inclusión de lenguajes como Elixir, LFE, Gleam, y otros demuestra la versatilidad y la capacidad de evolución de la máquina virtual BEAM para adaptarse a nuevas tendencias y necesidades en el desarrollo de software.
-```
+
