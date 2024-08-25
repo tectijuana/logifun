@@ -1,4 +1,4 @@
-```markdown
+
 ### Proyecto 3: Calculadora Distribuida en Erlang
 
 #### Objetivo del Proyecto
@@ -174,4 +174,4 @@ El proyecto consistirá en configurar cuatro nodos de Erlang, cada uno responsab
 - El proyecto completo, incluyendo todos los archivos de código fuente (.erl) y una breve documentación de cómo iniciar y probar el sistema, debe ser entregado en un repositorio compartido o plataforma de gestión de código especificada por el instructor.
 - La documentación debe incluir instrucciones detalladas para configurar los nodos y ejecutar pruebas para verificar la funcionalidad del sistema.
 
-```
+
