@@ -83,14 +83,16 @@ Proveer a los estudiantes de las bases teóricas y prácticas necesarias para la
 - Cesarini, F., & Vinoski, S. (2016). Designing for Scalability with Erlang/OTP: Implement Robust, Fault-Tolerant Systems. O’Reilly Media. ISBN 9781449320737.
 - St. Laurent, S. (2017). Introducing Erlang: Getting Started in Functional Programming (2nd ed.). O’Reilly Media. ISBN 9781491973370.
 
-## Utilerias
-- Github Student Pack https://education.github.com/pack
-- Amazon Web Services "Beca de $100 dlls" con recarga durante el semestre
-- http://file.io para subidas anonimas auto purgable a 2 meses
-- ASCII Arte generador https://ascii-generator.site
-- Grabacion de habilidad con http://asciinema.org
-- IA herramientas para acelerar entregas via http://futuretools.io el autor tiene canal  YT es de San Diego.
-- 
+## Utilerías
+
+- **GitHub Student Pack:** [GitHub Education Pack](https://education.github.com/pack)
+- **Publicación de código privado o público:** Utiliza [GitHub Gist](http://gist.github.com). Se requiere una cuenta.
+- **Amazon Web Services:** Obtén una "Beca de $100 USD" con recarga durante el semestre en [AWS Academy](https://www.awsacademy.com/vforcesite/LMS_Login).
+- **Subidas anónimas auto purgables:** Utiliza [file.io](http://file.io) para subir archivos que se eliminarán automáticamente después de 2 meses.
+- **Generador de arte ASCII:** Crea arte ASCII con [ASCII Generator](https://ascii-generator.site).
+- **Grabación de habilidades:** Usa [asciinema](http://asciinema.org) para grabar y compartir sesiones en la terminal.
+- **Herramientas de IA para optimizar entregas académicas:** Explora [Future Tools](http://futuretools.io) para encontrar herramientas útiles. El autor tiene un canal en YouTube y es de San Diego.
+
 
 
 
