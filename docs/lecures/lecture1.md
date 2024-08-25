@@ -71,7 +71,7 @@ Conocer algunos ejemplos de software y plataformas ampliamente utilizadas que se
 - **Razón para Usar Erlang**: La elección de Erlang por parte de Telegram se debe a su capacidad para manejar un gran número de conexiones simultáneas, mantener baja latencia, y proporcionar alta disponibilidad y fiabilidad. Las características de concurrencia y tolerancia a fallos de Erlang aseguran que Telegram pueda escalar y mantener su rendimiento incluso bajo alta carga.
 
 
-Aquí tienes una tabla que muestra 10 servicios de mensajería populares y si utilizan Erlang como parte de su infraestructura tecnológica:
+## 10 servicios de mensajería populares y si utilizan Erlang como parte de su infraestructura tecnológica:
 
 | **Servicio de Mensajería**  | **Usa Erlang** | **Descripción**                                                                                         |
 |-----------------------------|----------------|---------------------------------------------------------------------------------------------------------|
@@ -87,7 +87,7 @@ Aquí tienes una tabla que muestra 10 servicios de mensajería populares y si ut
 | Slack                       | No             | Emplea una combinación de lenguajes, incluyendo JavaScript (Node.js), para su backend de mensajería.    |
 
 
-### Motivación para Ingenieros de Sistemas con Experiencia en C#, Python, y Otros Lenguajes
+## Motivación para Ingenieros de Sistemas con Experiencia en C#, Python, y Otros Lenguajes
 
 Erlang y su ecosistema ofrecen un enfoque único y poderoso para construir aplicaciones que necesitan ser altamente concurrentes, distribuidas y tolerantes a fallos. Para ingenieros de sistemas familiarizados con lenguajes como C# y Python, aprender Erlang puede abrir nuevas oportunidades para trabajar en sistemas de alta disponibilidad y rendimiento. Algunas razones para considerar Erlang son:
 
