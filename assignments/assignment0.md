@@ -31,17 +31,28 @@ Repuestas en el siguiente video:
 
 [![Ofcial introduccion](https://img.youtube.com/vi/SOqQVoVai6s/hqdefault.jpg)](https://youtu.be/SOqQVoVai6s?si=OSKUc8AS8BGtedO2)
 
-Sobre la inmutabilidad, ¿cómo la puede explicar con sus palabras?
-¿Qué es la inmutabilidad y cómo influye en los modelos de concurrencia en programación funcional?
-¿Cuál es la diferencia entre los conceptos de mutabilidad e inmutabilidad, según lo discutido en el video?
-¿Cómo se relacionan las ideas de mutabilidad con la enseñanza de las matemáticas y la programación según el presentador?
-¿Qué problemas pueden surgir en un sistema concurrente que utiliza memoria compartida y estado mutable?
-¿Cómo se manejan los fallos en sistemas con estado mutable en comparación con sistemas con estado inmutable?
-¿Por qué es importante la localización de la memoria compartida en sistemas distribuidos? Da un ejemplo del video.
-¿Qué certezas menciona el presentador al hablar de los desafíos de la programación y la confiabilidad de las redes?
-¿En qué tipos de aplicaciones es más adecuado utilizar un estado mutable según la discusión del video?
-¿Cómo el uso de estados inmutables puede contribuir al futuro de la programación en arquitecturas multinúcleo?
-¿Qué impacto tiene la Ley de Amdahl en la necesidad de paralelizar computaciones y cómo se relaciona esto con la programación concurrente basada en estados inmutables?
+1. **Sobre la inmutabilidad, ¿cómo la puede explicar con sus palabras?**
+
+2. **¿Qué es la inmutabilidad y cómo influye en los modelos de concurrencia en programación funcional?**
+
+3. **¿Cuál es la diferencia entre los conceptos de mutabilidad e inmutabilidad, según lo discutido en el video?**
+
+4. **¿Cómo se relacionan las ideas de mutabilidad con la enseñanza de las matemáticas y la programación según el presentador?**
+
+5. **¿Qué problemas pueden surgir en un sistema concurrente que utiliza memoria compartida y estado mutable?**
+
+6. **¿Cómo se manejan los fallos en sistemas con estado mutable en comparación con sistemas con estado inmutable?**
+
+7. **¿Por qué es importante la localización de la memoria compartida en sistemas distribuidos? Da un ejemplo del video.**
+
+8. **¿Qué certezas menciona el presentador al hablar de los desafíos de la programación y la confiabilidad de las redes?**
+
+9. **¿En qué tipos de aplicaciones es más adecuado utilizar un estado mutable según la discusión del video?**
+
+10. **¿Cómo el uso de estados inmutables puede contribuir al futuro de la programación en arquitecturas multinúcleo?**
+
+11. **¿Qué impacto tiene la Ley de Amdahl en la necesidad de paralelizar computaciones y cómo se relaciona esto con la programación concurrente basada en estados inmutables?**
+
 
 [![Inmutabilidad](https://img.youtube.com/vi/8Sf6ToPNiA4/hqdefault.jpg)](https://youtu.be/8Sf6ToPNiA4?si=-m-YGDrVdCYSPbo9)
 
