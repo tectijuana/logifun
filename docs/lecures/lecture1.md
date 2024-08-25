@@ -1,6 +1,7 @@
 
+![](https://github.com/user-attachments/assets/448f899b-fa17-4ae8-9859-37ba3640ccaa)
 
-![](https://seeklogo.com/images/E/erlang-logo-025A1D4DFC-seeklogo.com.png)
+
 
 ### Erlang: Concurrencia y Programación Funcional
 
