@@ -71,6 +71,22 @@ Conocer algunos ejemplos de software y plataformas ampliamente utilizadas que se
 - **Razón para Usar Erlang**: La elección de Erlang por parte de Telegram se debe a su capacidad para manejar un gran número de conexiones simultáneas, mantener baja latencia, y proporcionar alta disponibilidad y fiabilidad. Las características de concurrencia y tolerancia a fallos de Erlang aseguran que Telegram pueda escalar y mantener su rendimiento incluso bajo alta carga.
 
 
+Aquí tienes una tabla que muestra 10 servicios de mensajería populares y si utilizan Erlang como parte de su infraestructura tecnológica:
+
+| **Servicio de Mensajería**  | **Usa Erlang** | **Descripción**                                                                                         |
+|-----------------------------|----------------|---------------------------------------------------------------------------------------------------------|
+| WhatsApp                    | Sí             | Utiliza Erlang para manejar millones de conexiones simultáneas y mantener la fiabilidad y baja latencia. |
+| Facebook Messenger          | No             | Utiliza tecnologías internas como Hack, C++, y Java para manejar la comunicación en tiempo real.         |
+| Telegram                    | Sí             | Emplea Erlang en su sistema backend para manejar la mensajería en tiempo real con alta concurrencia.     |
+| Signal                      | No             | Utiliza una combinación de tecnologías, incluyendo Java, para su infraestructura de mensajería segura.   |
+| WeChat                      | No             | Usa tecnologías propias y una infraestructura diversificada, pero no emplea Erlang.                     |
+| Viber                       | No             | Utiliza tecnologías diversas, incluyendo C++, para su infraestructura de mensajería.                    |
+| Discord                     | Parcialmente   | Utiliza Elixir (sobre BEAM de Erlang) para manejar conexiones de WebSocket de alta concurrencia.        |
+| Skype                       | No             | Emplea tecnologías de Microsoft, como Azure y C#, en su infraestructura de mensajería.                  |
+| Line                        | No             | Utiliza su propia infraestructura tecnológica basada en tecnologías como Java y C++.                    |
+| Slack                       | No             | Emplea una combinación de lenguajes, incluyendo JavaScript (Node.js), para su backend de mensajería.    |
+
+
 ### Motivación para Ingenieros de Sistemas con Experiencia en C#, Python, y Otros Lenguajes
 
 Erlang y su ecosistema ofrecen un enfoque único y poderoso para construir aplicaciones que necesitan ser altamente concurrentes, distribuidas y tolerantes a fallos. Para ingenieros de sistemas familiarizados con lenguajes como C# y Python, aprender Erlang puede abrir nuevas oportunidades para trabajar en sistemas de alta disponibilidad y rendimiento. Algunas razones para considerar Erlang son:
