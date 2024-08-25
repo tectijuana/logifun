@@ -1,6 +1,6 @@
 
 
-![](https://github.com/gilbarbara/logos/blob/master/logos/erlang.svg)
+![](https://www.erlang.org/assets/img/erlang-logo.svg)
 
 ### Erlang: Concurrencia y Programación Funcional
 
