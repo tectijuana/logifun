@@ -84,9 +84,13 @@ Proveer a los estudiantes de las bases teóricas y prácticas necesarias para la
 - St. Laurent, S. (2017). Introducing Erlang: Getting Started in Functional Programming (2nd ed.). O’Reilly Media. ISBN 9781491973370.
 
 ## Utilerias
-- github student pack
-- file.io para subidas anonimas auto borrables
+- Github Student Pack https://education.github.com/pack
+- Amazon Web Services "Beca de $100 dlls" con recarga durante el semestre
+- http://file.io para subidas anonimas auto purgable a 2 meses
 - ASCII Arte generador https://ascii-generator.site
+- Grabacion de habilidad con http://asciinema.org
+- IA herramientas para acelerar entregas via http://futuretools.io el autor tiene canal  YT es de San Diego.
+- 
 
 
 
