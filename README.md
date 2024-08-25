@@ -1,3 +1,7 @@
+
+![DALL·E 2024-08-25 12 00 07 - A friendly and intelligent small robot named Lambda Bot, designed as the mascot for a programming class focused on functional and logic programming  T](https://github.com/user-attachments/assets/f0fae45f-f121-43ab-98f5-8b91f037d774)
+
+
 # Temario de Programación Lógica y Funcional
 
 ## Objetivo General
