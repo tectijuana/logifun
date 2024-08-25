@@ -7,7 +7,6 @@ Para introducir a los estudiantes al mundo de Erlang de manera sencilla y motiva
 Puedes crear un archivo llamado `hola_mundo.erl` con el siguiente contenido:
 
 ```erlang
-
 %------------------------------------------------------------------------------
 % Módulo:       hola_mundo
 % Propósito:    Imprimir un mensaje de "Hola, Mundo!" en la consola.
