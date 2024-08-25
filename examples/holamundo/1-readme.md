@@ -105,30 +105,30 @@ En lugar de usar la consola de Erlang, también puedes compilar y ejecutar el c�
 
 Usar un Makefile es útil en proyectos más grandes o cuando se trabaja con múltiples archivos. Para este ejemplo simple, es opcional, pero puede introducir a los estudiantes a prácticas más organizadas. Aquí tienes un ejemplo de un `Makefile` básico para Erlang:
 
-- **Crear un archivo `Makefile`** con el siguiente contenido:
+- **Crear un archivo `Makefile`** con el siguiente contenido, recuerde que este script es muy "especial" con los espacios/tabuladores:
 
-    ```makefile
-    ERLC = erlc
-    ERL = erl
+```makefile
+# Define the Erlang compiler and interpreter commands
+ERLC = erlc
+ERL = erl
 
-    all: compile run
+# Define the default task that will run both compile and run tasks
+all: compile run
 
-    compile:
-    	$(ERLC) hola_mundo.erl
+# Compile the Erlang source file into a .beam file
+compile:
+	$(ERLC) hola_mundo.erl
 
-    run:
-    	$(ERL) -noshell -s hola_mundo saludar -s init stop
+# Run the compiled Erlang program
+run:
+	$(ERL) -noshell -s hola_mundo saludar -s init stop
 
-    clean:
-    	rm -f *.beam
-    ```
+# Clean up: remove all .beam files
+clean:
+	rm -f *.beam
 
-- **Explicación del Makefile**:
-  - `ERLC = erlc` y `ERL = erl`: Define variables para los comandos del compilador de Erlang y la consola de Erlang.
-  - `all: compile run`: Define una tarea llamada `all` que primero compila y luego ejecuta el código.
-  - `compile:`: Usa el compilador de Erlang para compilar el archivo `hola_mundo.erl`.
-  - `run:`: Ejecuta la consola de Erlang, llama a la función `saludar` y luego cierra la consola (`-noshell` y `-s init stop` son flags para ejecutar el script sin iniciar la shell interactiva).
-  - `clean:`: Borra los archivos compilados `.beam`.
+```
+
 
 #### ¿Directo o con Makefile?
 
@@ -139,7 +139,7 @@ Usar un Makefile es útil en proyectos más grandes o cuando se trabaja con múl
 -----
 
 
-
+[![asciicast](https://asciinema.org/a/yyz9tEOuD9CkryizvgNserE9T.svg)](https://asciinema.org/a/yyz9tEOuD9CkryizvgNserE9T)
 
 
 
