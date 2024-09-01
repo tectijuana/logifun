@@ -74,11 +74,7 @@ Paradigma que enfatiza la gestión segura de la memoria, evitando errores comune
 
 ## ¿Quién más utiliza la Programación Funcional?
 
-La Programación Funcional ha existido por bastante tiempo y no son solo los desarrolladores de .NET quienes están mostrando interés. De hecho, muchos otros lenguajes han ofrecido soporte para el paradigma funcional mucho antes que .NET.
-
-### ¿Qué significa ofrecer soporte?
-
-Se refiere a la capacidad de implementar código usando el paradigma funcional. Este soporte se presenta principalmente en dos formas:
+La Programación Funcional ha existido por bastante tiempo y no son solo los desarrolladores de .NET quienes están mostrando interés. De hecho, muchos otros lenguajes han ofrecido soporte para el paradigma funcional mucho antes que .NET que se refiere a la capacidad de implementar código usando el paradigma funcional. Este soporte se presenta principalmente en dos formas:
 
 1. **Lenguajes Funcionales Puros:**
    Estos lenguajes están diseñados para que los desarrolladores escriban código exclusivamente funcional. Todas las variables son inmutables y ofrecen características como currying y funciones de orden superior de forma nativa. Aunque algunas características de la orientación a objetos podrían estar presentes, no son la prioridad para los desarrolladores de estos lenguajes.
@@ -113,7 +109,7 @@ Se refiere a la capacidad de implementar código usando el paradigma funcional. 
 ----
 ## ¿Vale la pena aprender primero un lenguaje funcional puro?
 
-Actualmente, el paradigma de programación orientada a objetos (OO) sigue siendo el más dominante en el mundo del desarrollo de software. La programación funcional, por lo general, se aprende después. Aunque esta tendencia podría cambiar en el futuro, esta es la realidad actual.
+Actualmente, el paradigma de programación orientada a objetos sigue siendo el más dominante en el mundo del desarrollo de software. La programación funcional, por lo general, se aprende déspués. Aunque esta tendencia podría cambiar en el futuro, esta es la realidad actual.
 
 Algunos argumentan que, si vienes de un enfoque orientado a objetos, es mejor aprender primero la programación funcional en su forma pura y luego aplicar esos conocimientos en lenguajes como C#. Esta estrategia es completamente válida y puede ser muy enriquecedora.
 
