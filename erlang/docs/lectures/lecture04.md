@@ -1,4 +1,6 @@
 
+![Laboratorio](https://github.com/user-attachments/assets/02aab57f-0e17-4f9b-a2a0-000bd6f2ea90)
+
 ## Prácticas de Laboratorio en Erlang
 
 | **Número de Práctica** | **Objetivo**                                                     | **Actividades**                                                                                                                                                     | **Aporte al Temario**                                                  | **Nivel de Dificultad** | **Competencias Desarrolladas**                                | **Sugerencias**                                             |
