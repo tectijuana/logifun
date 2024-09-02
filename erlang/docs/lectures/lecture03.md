@@ -1,3 +1,5 @@
+# ERLANG, como lenguaje funcional
+
 | Concepto                   | Sintaxis/Ejemplo                                 | Descripción                                                        |
 |----------------------------|--------------------------------------------------|--------------------------------------------------------------------|
 | **Comentarios**            | `% Esto es un comentario`                        | Los comentarios en Erlang comienzan con el símbolo `%`.            |
