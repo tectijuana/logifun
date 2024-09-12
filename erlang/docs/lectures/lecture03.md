@@ -84,116 +84,108 @@
 Este cheat sheet proporciona una guía rápida sobre cómo crear, manipular y trabajar con binarios en Erlang, así como realizar conversiones y comparaciones básicas. Es útil para programadores que necesiten trabajar con estructuras de datos binarios y optimización de datos en Erlang.
 
 ---
+# Makefile para automatización de corrida de programas.
 
+Un **Makefile** es un archivo de texto que contiene un conjunto de reglas e instrucciones para el programa **`make`**, una herramienta de automatización de compilación. Los Makefiles se utilizan para simplificar y automatizar el proceso de compilación y construcción de programas, especialmente en proyectos que involucran múltiples archivos fuente o etapas de compilación complejas.
 
+---
 
-# Makefile
+## ¿Qué es `make`?
 
-Ventajas de Usar un Makefile en Proyectos Erlang
+**`make`** es una utilidad de Unix que analiza el Makefile y ejecuta comandos definidos en él para construir y gestionar proyectos de software. Utiliza las dependencias y las reglas especificadas para determinar qué partes del programa necesitan ser recompiladas y qué comandos deben ejecutarse para hacerlo.
 
-Simplifica el Flujo de Trabajo: No es necesario recordar todos los comandos de compilación y ejecución.
-Reduce Errores: Al automatizar comandos, se minimiza el riesgo de cometer errores manuales.
-Facilita la Colaboración: Otros desarrolladores pueden entender y reproducir el proceso de compilación fácilmente.
-Escalabilidad: A medida que el proyecto crece, el Makefile puede actualizarse para manejar nuevas dependencias y tareas.
+---
 
+## Beneficios de Usar un Makefile
+
+- **Automatización**: Evita la necesidad de compilar manualmente cada archivo o ejecutar comandos repetitivos.
+- **Eficiencia**: `make` recompila sólo los archivos que han cambiado, ahorrando tiempo.
+- **Organización**: Centraliza las instrucciones de compilación y ejecución en un solo lugar.
+- **Portabilidad**: Facilita la construcción del proyecto en diferentes entornos sin modificar los comandos manualmente.
+
+---
+
+## Componentes de un Makefile
+
+Un Makefile está compuesto por reglas que incluyen:
+
+1. **Objetivos (Targets)**: El nombre de la tarea que se quiere lograr, como compilar un archivo o ejecutar un programa.
+2. **Dependencias**: Archivos o recursos que deben existir o actualizarse antes de ejecutar el objetivo.
+3. **Comandos**: Las acciones que se ejecutarán para cumplir el objetivo.
+
+**Ejemplo de una regla simple:**
 
 ```makefile
-# Makefile para compilar y ejecutar programa1 y programa2 en Erlang
-
-ERL=erl
-ERLC=erlc
-ERLFLAGS=
-
-.PHONY: all ejecutar_programa1 ejecutar_programa2 limpiar
-
-all: programa1.beam programa2.beam
-
 programa1.beam: programa1.erl
-	$(ERLC) $(ERLFLAGS) programa1.erl
-
-programa2.beam: programa2.erl
-	$(ERLC) $(ERLFLAGS) programa2.erl
-
-ejecutar_programa1: programa1.beam
-	$(ERL) -noshell -s programa1 start -s init stop
-
-ejecutar_programa2: programa2.beam
-	$(ERL) -noshell -s programa2 start -s init stop
-
-limpiar:
-	rm -f *.beam
+    erlc programa1.erl
 ```
 
-**Explicación:**
+- **Objetivo**: `programa1.beam`
+- **Dependencia**: `programa1.erl`
+- **Comando**: `erlc programa1.erl`
 
-- **Compilar los programas:**
+---
 
-  Para compilar `programa1` y `programa2`, ejecuta:
+## Cómo Funciona el Makefile en el Contexto de Erlang
+
+En el ejemplo anterior, el Makefile define cómo compilar y ejecutar dos programas Erlang (`programa1` y `programa2`). Esto automatiza las siguientes tareas:
+
+- **Compilación**: Convierte los archivos fuente `.erl` en archivos bytecode `.beam` utilizables por la máquina virtual de Erlang.
+- **Ejecución**: Ejecuta los programas sin necesidad de introducir manualmente los comandos en la consola de Erlang.
+- **Limpieza**: Elimina los archivos compilados para mantener el directorio limpio.
+
+**Uso del Makefile:**
+
+- **Compilar todos los programas**:
 
   ```bash
   make
   ```
 
-- **Ejecutar `programa1`:**
+- **Ejecutar un programa específico**:
 
   ```bash
   make ejecutar_programa1
   ```
 
-- **Ejecutar `programa2`:**
-
-  ```bash
-  make ejecutar_programa2
-  ```
-
-- **Limpiar archivos compilados:**
-
-  Para eliminar los archivos `.beam` generados:
+- **Limpiar los archivos compilados**:
 
   ```bash
   make limpiar
   ```
 
-**Notas:**
+---
 
-- Asegúrate de que los archivos `programa1.erl` y `programa2.erl` están en el mismo directorio que el `Makefile`.
-- Los módulos Erlang (`programa1` y `programa2`) deben exportar una función `start/0` que actuará como punto de entrada.
+## Ventajas de Usar un Makefile en Proyectos Erlang
 
-**Ejemplo de `programa1.erl`:**
+- **Simplifica el Flujo de Trabajo**: No es necesario recordar todos los comandos de compilación y ejecución.
+- **Reduce Errores**: Al automatizar comandos, se minimiza el riesgo de cometer errores manuales.
+- **Facilita la Colaboración**: Otros desarrolladores pueden entender y reproducir el proceso de compilación fácilmente.
+- **Escalabilidad**: A medida que el proyecto crece, el Makefile puede actualizarse para manejar nuevas dependencias y tareas.
 
-```erlang
--module(programa1).
--export([start/0]).
+---
 
-start() ->
-    io:format("Ejecutando programa1~n").
+## Creación y Personalización de un Makefile
+
+Puedes crear un Makefile con cualquier editor de texto y guardarlo con el nombre `Makefile` (sin extensión). Asegúrate de respetar la indentación (utiliza tabulaciones, no espacios) y la sintaxis correcta.
+
+**Ejemplo básico:**
+
+```makefile
+all: programa1.beam programa2.beam
+
+programa1.beam: programa1.erl
+    erlc programa1.erl
+
+programa2.beam: programa2.erl
+    erlc programa2.erl
+
+ejecutar_programa1:
+    erl -noshell -s programa1 start -s init stop
+
+ejecutar_programa2:
+    erl -noshell -s programa2 start -s init stop
+
+limpiar:
+    rm -f *.beam
 ```
-
-**Ejemplo de `programa2.erl`:**
-
-```erlang
--module(programa2).
--export([start/0]).
-
-start() ->
-    io:format("Ejecutando programa2~n").
-```
-
-**Instrucciones adicionales:**
-
-1. **Instalar Erlang (si no lo tienes):**
-
-   ```bash
-   sudo apt update
-   sudo apt install erlang
-   ```
-
-2. **Verificar la instalación:**
-
-   ```bash
-   erl -version
-   ```
-
-3. **Ejecutar el `Makefile`:**
-
-   Navega al directorio donde tienes el `Makefile` y los archivos `.erl`, y sigue las instrucciones anteriores.
