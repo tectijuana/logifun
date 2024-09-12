@@ -1,5 +1,5 @@
 
-
+# Ejemplos Ping Pong
 
 ```erlang
 %% Módulo de ejemplo para un juego simple de Ping Pong en Erlang
