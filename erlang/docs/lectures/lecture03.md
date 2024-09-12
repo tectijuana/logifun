@@ -85,3 +85,115 @@ Este cheat sheet proporciona una guía rápida sobre cómo crear, manipular y tr
 
 ---
 
+
+
+# Makefile
+
+Ventajas de Usar un Makefile en Proyectos Erlang
+
+Simplifica el Flujo de Trabajo: No es necesario recordar todos los comandos de compilación y ejecución.
+Reduce Errores: Al automatizar comandos, se minimiza el riesgo de cometer errores manuales.
+Facilita la Colaboración: Otros desarrolladores pueden entender y reproducir el proceso de compilación fácilmente.
+Escalabilidad: A medida que el proyecto crece, el Makefile puede actualizarse para manejar nuevas dependencias y tareas.
+
+
+```makefile
+# Makefile para compilar y ejecutar programa1 y programa2 en Erlang
+
+ERL=erl
+ERLC=erlc
+ERLFLAGS=
+
+.PHONY: all ejecutar_programa1 ejecutar_programa2 limpiar
+
+all: programa1.beam programa2.beam
+
+programa1.beam: programa1.erl
+	$(ERLC) $(ERLFLAGS) programa1.erl
+
+programa2.beam: programa2.erl
+	$(ERLC) $(ERLFLAGS) programa2.erl
+
+ejecutar_programa1: programa1.beam
+	$(ERL) -noshell -s programa1 start -s init stop
+
+ejecutar_programa2: programa2.beam
+	$(ERL) -noshell -s programa2 start -s init stop
+
+limpiar:
+	rm -f *.beam
+```
+
+**Explicación:**
+
+- **Compilar los programas:**
+
+  Para compilar `programa1` y `programa2`, ejecuta:
+
+  ```bash
+  make
+  ```
+
+- **Ejecutar `programa1`:**
+
+  ```bash
+  make ejecutar_programa1
+  ```
+
+- **Ejecutar `programa2`:**
+
+  ```bash
+  make ejecutar_programa2
+  ```
+
+- **Limpiar archivos compilados:**
+
+  Para eliminar los archivos `.beam` generados:
+
+  ```bash
+  make limpiar
+  ```
+
+**Notas:**
+
+- Asegúrate de que los archivos `programa1.erl` y `programa2.erl` están en el mismo directorio que el `Makefile`.
+- Los módulos Erlang (`programa1` y `programa2`) deben exportar una función `start/0` que actuará como punto de entrada.
+
+**Ejemplo de `programa1.erl`:**
+
+```erlang
+-module(programa1).
+-export([start/0]).
+
+start() ->
+    io:format("Ejecutando programa1~n").
+```
+
+**Ejemplo de `programa2.erl`:**
+
+```erlang
+-module(programa2).
+-export([start/0]).
+
+start() ->
+    io:format("Ejecutando programa2~n").
+```
+
+**Instrucciones adicionales:**
+
+1. **Instalar Erlang (si no lo tienes):**
+
+   ```bash
+   sudo apt update
+   sudo apt install erlang
+   ```
+
+2. **Verificar la instalación:**
+
+   ```bash
+   erl -version
+   ```
+
+3. **Ejecutar el `Makefile`:**
+
+   Navega al directorio donde tienes el `Makefile` y los archivos `.erl`, y sigue las instrucciones anteriores.
