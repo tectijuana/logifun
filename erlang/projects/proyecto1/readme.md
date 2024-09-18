@@ -76,6 +76,7 @@ Desarrollar y entregar 25 programas en Erlang, asegurando su correcta compilaci�
   - **Bueno (42-53):** Buena documentación, aunque puede faltar en algunos programas o los comentarios no cubren completamente el tercio requerido.
   - **Regular (30-41):** Documentación insuficiente o comentarios escasos que apenas cubren una parte del código.
   - **Insuficiente (0-29):** Falta de documentación adecuada y comentarios en los programas.
+<img width="335" alt="Screenshot 2024-09-18 at 2 08 45 p m" src="https://github.com/user-attachments/assets/e1ea3a37-ba5a-44cd-b5dc-b4b003017f6b">
 
 ---
 
