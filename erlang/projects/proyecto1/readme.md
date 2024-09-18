@@ -2,6 +2,7 @@
 
 **Curso:** Programación Lógica y Funcional para Ingeniería de Sistemas  
 **Fecha de Entrega:** 19/9 5pm
+
 **Repositorio de Referencia:** https://github.com/tectijuana/logifun/blob/main/erlang/assignments/assigments11-ejercicios.md
 
 #### **Objetivo:**
