@@ -1,8 +1,8 @@
 ### **Actividad 1: Entrega de 25+4 Programas en Erlang**
 
 **Curso:** Programación Lógica y Funcional para Ingeniería de Sistemas  
-**Fecha de Entrega:** 19/9 5pm 
-**Repositorio de Referencia:** [github.com/tectijuana/logifun/](https://github.com/tectijuana/logifun/blob/main/erlang/assignments/assigments11-ejercicios.md)
+**Fecha de Entrega:** 19/9 5pm
+**Repositorio de Referencia:** https://github.com/tectijuana/logifun/blob/main/erlang/assignments/assigments11-ejercicios.md
 
 #### **Objetivo:**
 Desarrollar y entregar 25 programas en Erlang, asegurando su correcta compilación, ejecución y documentación adecuada. Esta actividad tiene como finalidad reforzar los conceptos tutorial en el curso y fomentar buenas prácticas de programación y documentación.
