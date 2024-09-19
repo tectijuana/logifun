@@ -1,8 +1,10 @@
 
 
-# MANEJO DE RECURSOS PROCESOS  
+# Tema: Manejo de Recursos y Procesos en Erlang en Linux
 
-###Código Erlang: `stress_test.erl`
+En esta clase, exploraremos cómo Erlang gestiona los procesos y los recursos en un entorno Linux. Aprenderemos sobre la creación y supervisión de procesos ligeros, que son una de las características más poderosas de Erlang. Además, discutiremos la gestión eficiente de recursos, cómo manejar la concurrencia y el uso basico de algunas herramientas de monitoreo para optimizar el rendimiento de nuestras aplicacionesl, para demostrar en la consola shell.
+
+### Código Erlang: `stress_test.erl`
 
 ```erlang
 %% Archivo: stress_test.erl
