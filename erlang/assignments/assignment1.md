@@ -4,7 +4,7 @@
 
 A continuación se presenta una lista de proyectos propuestos para el curso, junto con una breve explicación de cada uno.
 
-| Proyecto                        | Descripción                                                                                         | Calificación | Integrantes |
+| Proyecto                        | Descripción                                                                                         | Integrantes | Asciinemas |
 |---------------------------------|-----------------------------------------------------------------------------------------------------|--------------|-------------|
 | **Project 1: Hello, World!**    | Proyecto introductorio donde los estudiantes configuran su entorno de desarrollo y escriben su primer programa en Erlang. |              |             |
 | **Project 2: Chat Server**      | Implementación de un simple servidor de chat que permite a múltiples clientes conectarse y enviar mensajes entre ellos utilizando procesos de Erlang. |              |             |
