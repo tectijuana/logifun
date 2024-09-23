@@ -16,3 +16,5 @@ A continuación se presenta una lista de proyectos propuestos para el curso, jun
 | **Project 8: Distributed Chat** | Extensión del proyecto de chat para funcionar en un entorno distribuido, permitiendo que usuarios conectados a diferentes nodos se comuniquen. |              |             |
 | **Project 9: Mnesia Database**  | Proyecto para construir una base de datos distribuida usando Mnesia, donde los estudiantes pueden crear, leer, actualizar y borrar registros. |              |             |
 | **Project 10: Web Server**      | Implementar un servidor web simple en Erlang que maneje solicitudes HTTP, demostrando cómo construir aplicaciones web básicas en Erlang. |              |             |
+| **Project 11: Exilir**      | Instalacion de Exilir. |              |             |
+| **Project 12: Exilix con BD**      | Implementar un servidor web simple en Erlang que maneje solicitudes HTTP, demostrando cómo construir aplicaciones web básicas en Erlang. |              |             |
