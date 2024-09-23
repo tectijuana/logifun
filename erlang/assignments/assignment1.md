@@ -6,7 +6,7 @@ A continuación se presenta una lista de proyectos propuestos para el curso, jun
 
 | Proyecto                        | Descripción                                                                                         | Integrantes | Asciinemas |
 |---------------------------------|-----------------------------------------------------------------------------------------------------|--------------|-------------|
-| **Project 1: Hello, World!**    | Proyecto introductorio donde los estudiantes configuran su entorno de desarrollo y escriben su primer programa en Erlang. |              |             |
+| **Project 1: Hello, World!**    | Proyecto introductorio donde los estudiantes configuran su entorno de desarrollo y escriben su primer programa en Erlang. |   GLOBAL           |     GLOBAL        |
 | **Project 2: Chat Server**      | Implementación de un simple servidor de chat que permite a múltiples clientes conectarse y enviar mensajes entre ellos utilizando procesos de Erlang. |              |   [http://gitub.com/Sinus135/chatserver  ](https://github.com/Sinu135/ChatServer)        |
 | **Project 3: Calculator**       | Crear una calculadora distribuida donde los cálculos se realizan en diferentes nodos de Erlang, mostrando la capacidad de distribución de Erlang. |              |             |
 | **Project 4: Todo List**        | Aplicación de gestión de tareas que permite agregar, eliminar y listar tareas, usando GenServer para manejar el estado de las tareas. |              |             |
