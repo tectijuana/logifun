@@ -92,6 +92,7 @@ En esta tarea, explorarás el framework **Cowboy** dentro del ecosistema de **Er
 
 - **Fecha de Entrega:**
 
+<img width="284" alt="Screenshot 2024-09-24 at 2 21 04 p m" src="https://github.com/user-attachments/assets/4a3913e0-083f-462c-9940-ad223d3f595d">
 
   
 
