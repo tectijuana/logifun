@@ -119,6 +119,7 @@ En esta tarea, explorarás el framework **Cowboy** dentro del ecosistema de **Er
 ## **Recursos Adicionales**
 
 - **Documentación Oficial de Cowboy:** [ninenines.eu/docs/en/cowboy](https://ninenines.eu/docs/en/cowboy)
+- **TUTORIAL elaboracion de un dashboard Er, Cowboy IM (2024)**  https://medium.com/@william.echenim/from-concept-to-creation-building-real-time-dashboards-with-erlang-cowboy-and-mongooseim-68f8651a3449
 - **"Programming Erlang" por Joe Armstrong:** Libro fundamental para entender Erlang y su ecosistema.
 - **Tutoriales de Elixir y Phoenix:** Para explorar cómo Cowboy se utiliza en frameworks modernos.
 - **Guía de Inicio Rápido de Cowboy:** [Quick Start Guide](https://ninenines.eu/docs/en/cowboy/2.8/guide/quickstart/)
