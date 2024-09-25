@@ -104,3 +104,6 @@ El proyecto consistirá en crear un sistema de varios procesos donde cada proces
 ### Resultados
 
 Este proyectoespera que los estudiantes comprendan y apliquen conceptos clave de tolerancia a fallos y supervisión de procesos en aplicaciones concurrentes utilizando Erlang.
+
+# REPOSITORIO DEL PROYECTO
+https://github.com/Burgie80/RoundRobin
