@@ -1,3 +1,6 @@
+
+![Erlang Cowboy Framework](https://github.com/user-attachments/assets/d864fc88-d823-4451-808d-67daa52b13a3)
+
 # Tarea: Explorando el Framework Cowboy en Erlang
 
 ## **Objetivos de Aprendizaje**
