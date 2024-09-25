@@ -137,4 +137,8 @@ Este proyecto implicará la creación de una aplicación simple de lista de tare
 ### Resultados
 
 Este proyecto demostrará la capacidad de Erlang para manejar estados utilizando GenServer, así como la implementación de un sistema concurrente robusto para la gestión de tareas. Se espera que los estudiantes apliquen conceptos clave de manejo de estado y concurrencia en aplicaciones prácticas utilizando Erlang.
+
 ```
+# REPOSITORIO DE EQUIPO DE TRABAJO
+https://github.com/AAngel777/Task_Manager
+EVALUACION 100
