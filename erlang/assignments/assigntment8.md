@@ -123,5 +123,11 @@ El proyecto consistirá en extender un sistema de chat ya existente para que fun
 - El proyecto completo debe incluir todos los archivos de código fuente (.erl) y una documentación que explique cómo iniciar y utilizar el sistema de chat distribuido.
 - Incluir un archivo README que describa los pasos necesarios para ejecutar el sistema y ejemplos de comandos para interactuar con el chat.
 
+# REPOSITORIO
+
+- PRACTICO
+https://github.com/PaulScholl/chat_distribuido
+
+- TEORICO
 
 
