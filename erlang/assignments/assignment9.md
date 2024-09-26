@@ -58,6 +58,10 @@ Mnesia es particularmente útil en los siguientes escenarios:
 - **Capacidades de consulta limitadas**: Mnesia no soporta consultas SQL avanzadas. Si la aplicación requiere consultas complejas, Mnesia puede no ser la opción ideal.
 
 - **Falta de herramientas de administración**: A diferencia de las bases de datos comerciales, Mnesia carece de un ecosistema amplio de herramientas de administración, monitoreo y optimización.
+- 
+# Repositorio
+
+https://github.com/EscalanteUlises109/Proyecto-Programacion-logica-y-funcional
 
 
 
