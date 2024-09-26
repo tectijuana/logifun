@@ -117,6 +117,5 @@ El proyecto consistirá en crear un servidor web básico que escuche en un puert
 
 ### Repositorio
 
-https://github.com/EscalanteUlises109/Proyecto-Programacion-logica-y-funcional
 
 
