@@ -115,6 +115,8 @@ El proyecto consistirá en crear un servidor web básico que escuche en un puert
 - El proyecto completo debe incluir todos los archivos de código fuente (.erl) y una documentación que explique cómo iniciar y utilizar el servidor web.
 - Incluir un archivo README que describa los pasos necesarios para ejecutar el servidor y ejemplos de cómo interactuar con él.
 
-### Conclusión
+### Repositorio
 
-Este proyecto da capacidad de Erlang para construir aplicaciones web básicas utilizando  modo de manejar concurrencia y comunicación de procesos. Se espera que los estudiantes comprendan y apliquen conceptos clave de manejo de solicitudes HTTP y desarrollo de servidores web en Erlang.
+https://github.com/EscalanteUlises109/Proyecto-Programacion-logica-y-funcional
+
+
