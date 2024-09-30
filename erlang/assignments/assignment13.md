@@ -64,6 +64,9 @@ Les invitamos a participar en una serie de prácticas autodidactas diseñadas pa
 
 - **Fecha límite:**
 
+![Screenshot 2024-09-30 at 2 04 55 p m](https://github.com/user-attachments/assets/567a6371-c3b8-4de6-a0a8-2a3999206b0b)
+
+
 
 - Enviar un documento con los enlaces a los GISTs y a las grabaciones de ASCIINEMA.
 - Asegurarse de que todos los enlaces funcionen correctamente y que los repositorios sean públicos o tengan los permisos adecuados.
