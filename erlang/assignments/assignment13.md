@@ -1,3 +1,8 @@
+
+
+![asciinema](https://github.com/user-attachments/assets/cefe7f1d-ea8c-4e85-81f5-b13902319c4f)
+
+
 ## Actividad 12: **Auto Prácticas de Erlang**
 
 *Estimados estudiantes,*
