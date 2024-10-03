@@ -4,6 +4,15 @@
 
 # Conectar Raspberry Pi Zero 2W a un cable consola FTDI con PuTTY
 
+
+---
+| login:               | tec                                                                    |
+|----------------------|------------------------------------------------------------------------|
+| pass:                | 123123                                                                 |
+| Serial:              | 115200                                                                 |
+| $ sudo raspi-config  | # para conectarlos a la Wifi, aunque ya tiene Erlang Instalado la PiW2 |
+
+---
 ### **Objetivo:**
 Aprender a conectar y acceder a la Raspberry Pi Zero 2W utilizando un cable consola FTDI y PuTTY para comunicación serie sin necesidad de usar alimentación por el cable FTDI (solo tierra, RX y TX).
 
@@ -129,3 +138,5 @@ Erlang/OTP 23 [erts-11.0] [source] [64-bit]...
 
 Para salir de la consola Erlang, utiliza `Ctrl+C` dos veces.
 ```
+
+---
