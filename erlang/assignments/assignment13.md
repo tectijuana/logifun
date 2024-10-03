@@ -69,7 +69,9 @@ Les invitamos a participar en una serie de prácticas autodidactas diseñadas pa
 
 - **Fecha límite:**
 
-![Screenshot 2024-09-30 at 2 04 55 p m](https://github.com/user-attachments/assets/567a6371-c3b8-4de6-a0a8-2a3999206b0b)
+ > Cambio de PIN
+
+<img width="337" alt="Screenshot 2024-10-03 at 2 37 08 p m" src="https://github.com/user-attachments/assets/5462cab0-265c-4bd4-a296-eccd76baf4cd">
 
 
 
