@@ -1,4 +1,8 @@
-**Guía de Examen - Lenguajes Funcionales y Lógicos**
+
+![cooltext467564352537488](https://github.com/user-attachments/assets/e3fd20af-deab-440b-a43b-e2298ba05dea)
+
+
+**Guía de Examen TEMA 1 - Lenguajes Funcionales y Lógicos**
 
 **Carrera:** Ingeniería en Sistemas Computacionales  
 **Materia:** Lenguajes Funcionales y Lógicos  
