@@ -1,5 +1,5 @@
 
-![cooltext467564352537488](https://github.com/user-attachments/assets/e3fd20af-deab-440b-a43b-e2298ba05dea)
+![Cool Text - GUIA EXAMEN 467815994512709](https://github.com/user-attachments/assets/f3dd9d58-c96b-4c6f-90ed-8c8d3c120920)
 
 
 **Guía de Examen TEMA 1 - Lenguajes Funcionales y Lógicos**
