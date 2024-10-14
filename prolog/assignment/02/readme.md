@@ -28,7 +28,7 @@ graph TD;
 Para tus prácticas, usaremos **SWI-Prolog**, que es compatible con múltiples plataformas. Puedes instalarlo en **Ubuntu** (para aquellos que trabajen en AWS o sistemas basados en Linux) o acceder a versiones para **Windows**.
 
 #### Instalación en Ubuntu:
-Si estás trabajando en un entorno **Ubuntu**, como el proporcionado en AWS Academy, puedes instalar SWI-Prolog fácilmente:
+Si estás trabajando en un entorno **Ubuntu**, como el proporcionado en AWS Academy, puedes instalar SWI-Prolog fácilmente, recordatorio del la sesión anterior:
 
 ```bash
 sudo apt update
@@ -47,14 +47,6 @@ En el entorno de la red universitaria, puedes seguir los siguientes pasos para c
 ### 3. Crear y editar un programa en Prolog
 
 Para crear un programa en Prolog, necesitas un editor de texto. Si no tienes preferencias, te sugerimos usar **Emacs**, que está integrado con SWI-Prolog y ofrece funcionalidades útiles como el resaltado de sintaxis y formato automático.
-
-#### Configuración del editor Emacs:
-
-1. Inicia Prolog (doble clic en el acceso directo `plwin.exe`).
-2. En la barra de menú, selecciona **Settings** y luego **User init file**.
-3. Busca la línea `%:- set_prolog_flag(editor, pce_emacs).` y elimina el símbolo `%` al principio de la línea.
-4. Guarda el archivo (con el menú **Archivo > Guardar** o usando la combinación `Ctrl-x Ctrl-s`).
-5. Reinicia Prolog. La próxima vez que inicies SWI-Prolog, Emacs estará disponible como editor.
 
 #### Crear tu primer programa en Prolog:
 
@@ -95,8 +87,71 @@ A continuación, te dejamos algunas recomendaciones para mejorar tu flujo de tra
 
 Al finalizar estas primeras prácticas, estarás listo para abordar problemas más complejos en programación lógica. Recuerda que Prolog es un paradigma muy diferente a lenguajes como Erlang, por lo que es importante que te enfoques en pensar en términos de **reglas lógicas** y **relaciones**, más que en el control explícito del flujo del programa.
 
-Si deseas una copia de SWI-Prolog para usar en tu máquina personal, puedes descargarla desde el sitio oficial: [https://www.swi-prolog.org](https://www.swi-prolog.org).
-
 ---
 
-Con esta guía optimizada, los estudiantes tendrán una referencia clara y precisa sobre cómo empezar a trabajar con **Prolog**, además de una introducción a las herramientas profesionales que les ayudarán a programar de manera más eficiente.
+![cooltext468232267352232](https://github.com/user-attachments/assets/5f837c4f-ae1c-467f-bff2-7c3fbd8afeba)
+
+
+### Explicación del template:
+1. **Encabezado profesional**: Incluye información del autor y la fecha.
+2. **Código en C# (comentado)**: Proporciona una referencia comentada en C# sobre cómo resolver el mismo problema de encontrar el último elemento de una lista.
+3. **Código en Prolog**: El código Prolog que efectivamente resuelve el problema utilizando recursión.
+
+Este formato es útil para estudiantes que estén familiarizándose con la lógica de Prolog y deseen ver un paralelismo con un lenguaje como C#.
+
+```prolog
+% ===============================================
+% Autor: Juan Pérez
+% Fecha: 13 de octubre de 2024
+% Descripción: Programa en Prolog que determina 
+%              el último elemento de una lista.
+%              Se incluye una versión comentada
+%              en C# para referencia.
+% ===============================================
+
+% -------- Código en C# (comentado) ------------
+% using System;
+% using System.Collections.Generic;
+% 
+% class Program
+% {
+%     // Función para encontrar el último elemento de una lista en C#.
+%     static T MyLast<T>(List<T> list)
+%     {
+%         if (list == null || list.Count == 0)
+%             throw new ArgumentException("La lista no puede estar vacía.");
+%         
+%         return list[list.Count - 1]; // Devuelve el último elemento.
+%     }
+% 
+%     static void Main()
+%     {
+%         List<char> lista = new List<char> { 'a', 'b', 'c', 'd' };
+%         char ultimoElemento = MyLast(lista);
+% 
+%         Console.WriteLine("El último elemento es: " + ultimoElemento);
+%     }
+% }
+% ----------------------------------------------
+
+% -------- Código en Prolog --------------------
+% Predicado my_last(X, List) que determina el último
+% elemento X de la lista List.
+
+% Caso base: el último elemento es cuando la lista tiene solo un elemento.
+my_last(X, [X]).
+
+% Caso recursivo: ignora el primer elemento de la lista y sigue evaluando.
+my_last(X, [_|Tail]) :-
+    my_last(X, Tail).
+
+% Ejemplo de uso:
+% ?- my_last(X, [a, b, c, d]).
+% X = d.
+% ----------------------------------------------
+```
+
+
+
+
+
