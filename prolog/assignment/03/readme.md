@@ -728,7 +728,6 @@ s_tree(Graph, Tree) :- findall(Node, member(edge(Node, _), Graph), Nodes), build
 build_tree([], _, T, T).
 build_tree([N|Ns], Graph, Acc, T) :- member(edge(N, M), Graph), \+ member(edge(N, M), Acc), build_tree(Ns, Graph, [edge(N, M)|Acc], T).
 ```
-**Problemas en Prolog para Prácticas de Laboratorio (del 77 al 99)**
 
 77. Verificar si un término representa un árbol multiway.
 ```prolog
