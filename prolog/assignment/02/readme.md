@@ -40,7 +40,7 @@ En el entorno de la red universitaria, puedes seguir los siguientes pasos para c
 
 1. Inicia sesión en tu cuenta universitaria.
 2. Usa el menú **Inicio** para abrir **Explorador de Windows**.
-3. Navega hasta la ubicación: `Mi PC > Teaching > Applications > Departments > Language > Prolog 5 > files > bin`.
+3. Navega hasta la ubicación: `Mi PC > estudiante > Applications  > Language > Prolog 5 > files > bin`.
 4. Encuentra el archivo `plwin.exe`, haz clic derecho y selecciona **Crear acceso directo**. Coloca el acceso directo en tu escritorio para facilitar el acceso.
 5. Al hacer doble clic en el ícono del escritorio, se abrirá la consola de SWI-Prolog, donde verás el prompt de Prolog: `|?-`, lo que indica que está listo para recibir tus consultas.
 
