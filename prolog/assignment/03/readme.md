@@ -1,5 +1,8 @@
 **Lista de Problemas en Prolog para Prácticas de Laboratorio**
 
+
+BAsados en: https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/
+
 1. Encontrar el último elemento de una lista.
 ```prolog
 % Encuentra el último elemento de una lista.
@@ -725,3 +728,193 @@ s_tree(Graph, Tree) :- findall(Node, member(edge(Node, _), Graph), Nodes), build
 build_tree([], _, T, T).
 build_tree([N|Ns], Graph, Acc, T) :- member(edge(N, M), Graph), \+ member(edge(N, M), Acc), build_tree(Ns, Graph, [edge(N, M)|Acc], T).
 ```
+**Problemas en Prolog para Prácticas de Laboratorio (del 77 al 99)**
+
+77. Verificar si un término representa un árbol multiway.
+```prolog
+% Verifica si un término dado representa un árbol multiway.
+% Un árbol multiway tiene un nodo raíz y una lista de subárboles (que también son árboles multiway).
+istree(t(_, [])) :- !. % Caso base: un nodo con una lista vacía de hijos es un árbol multiway válido.
+istree(t(_, Forest)) :- is_forest(Forest). % Verifica si todos los elementos de la lista de subárboles son también árboles.
+
+% Verifica si una lista de términos representa un bosque de árboles multiway.
+is_forest([]). % Una lista vacía es un bosque válido.
+is_forest([T|Ts]) :- istree(T), is_forest(Ts). % Verifica que cada árbol en la lista sea un árbol multiway válido.
+```
+
+78. Contar el número de nodos de un árbol multiway.
+```prolog
+% Cuenta el número de nodos de un árbol multiway.
+% Un nodo es un elemento del árbol, incluyendo el nodo raíz y todos sus hijos.
+nnodes(t(_, []), 1). % Caso base: un árbol con solo un nodo tiene un nodo.
+nnodes(t(_, Forest), N) :- nnodes_forest(Forest, NF), N is NF + 1. % Cuenta el nodo raíz y los nodos de cada subárbol.
+
+% Cuenta el número de nodos en un bosque de árboles multiway.
+nnodes_forest([], 0). % Un bosque vacío no tiene nodos.
+nnodes_forest([T|Ts], N) :- nnodes(T, N1), nnodes_forest(Ts, N2), N is N1 + N2. % Suma los nodos de cada árbol en el bosque.
+```
+
+79. Construir un árbol a partir de una secuencia de nodos.
+```prolog
+% Construye un árbol multiway a partir de una secuencia de nodos y el carácter especial '^'.
+% '^' indica el final de un conjunto de hijos de un nodo.
+tree(String, Tree) :- atom_chars(String, Chars), tree_helper(Chars, Tree, []). % Convierte la cadena en una lista de caracteres y construye el árbol.
+
+tree_helper([X|Chars], t(X, Forest), Rest) :- tree_forest(Chars, Forest, Rest).
+
+% Construye el bosque asociado a un nodo.
+tree_forest(['^'|Rest], [], Rest). % '^' indica el final de los hijos.
+tree_forest(Chars, [T|Ts], Rest) :- tree_helper(Chars, T, Rest1), tree_forest(Rest1, Ts, Rest). % Construye cada subárbol y continúa con el resto de los hijos.
+```
+
+80. Determinar la longitud del camino interno de un árbol.
+```prolog
+% Calcula la longitud del camino interno de un árbol multiway.
+% La longitud del camino interno es la suma de las distancias desde la raíz hasta cada nodo.
+ipl(t(_, Forest), IPL) :- ipl_forest(Forest, 1, IPL). % La distancia inicial desde la raíz es 1.
+
+% Calcula la longitud del camino interno para un bosque de árboles multiway.
+ipl_forest([], _, 0). % Un bosque vacío tiene una longitud de camino interno de 0.
+ipl_forest([T|Ts], D, IPL) :- ipl(T, D, IPL1), D1 is D + 1, ipl_forest(Ts, D1, IPL2), IPL is IPL1 + IPL2.
+
+% Calcula la longitud del camino interno de un árbol dado un nivel.
+ipl(t(_, Forest), D, IPL) :- ipl_forest(Forest, D + 1, IPL1), IPL is IPL1 + D.
+```
+
+81. Construir la secuencia en orden de abajo hacia arriba de los nodos del árbol.
+```prolog
+% Construye la secuencia de recorrido de abajo hacia arriba de un árbol multiway.
+% La secuencia de abajo hacia arriba significa recorrer los hijos antes que el nodo raíz.
+bottom_up(t(X, []), [X]). % Caso base: si el árbol no tiene hijos, la secuencia es solo el nodo raíz.
+bottom_up(t(X, Forest), Seq) :- bottom_up_forest(Forest, SeqForest), append(SeqForest, [X], Seq). % Primero se recorren los hijos y luego se añade la raíz.
+
+% Construye la secuencia de abajo hacia arriba para un bosque de árboles multiway.
+bottom_up_forest([], []). % Un bosque vacío no tiene nodos que recorrer.
+bottom_up_forest([T|Ts], Seq) :- bottom_up(T, SeqT), bottom_up_forest(Ts, SeqTs), append(SeqT, SeqTs, Seq). % Recorre cada árbol del bosque.
+```
+
+82. Representación de un árbol multiway en estilo Lisp.
+```prolog
+% Representa un árbol multiway en estilo Lisp.
+% En estilo Lisp, un árbol se representa como '(raíz subárbol1 subárbol2 ... subárbolN)'.
+tree_lisp(t(X, []), X). % Caso base: si el árbol no tiene hijos, se representa como el nodo.
+tree_lisp(t(X, Forest), S) :- forest_lisp(Forest, SF), atomic_list_concat(['(', X, ' ', SF, ')'], S). % Concatena la raíz y sus subárboles.
+
+% Representa un bosque de árboles multiway en estilo Lisp.
+forest_lisp([], ''). % Un bosque vacío no tiene representación.
+forest_lisp([T|Ts], S) :- tree_lisp(T, ST), forest_lisp(Ts, STs), atomic_list_concat([ST, ' ', STs], S). % Concatena las representaciones de cada árbol en el bosque.
+```
+
+83. Convertir entre diferentes representaciones de grafos.
+```prolog
+% Convierta entre diferentes representaciones de grafos.
+% Un grafo puede representarse mediante aristas, lista de adyacencia o un término compuesto de nodos y aristas.
+% Aquí se muestra cómo convertir una lista de aristas en una lista de adyacencia.
+edges_to_adj_list(Edges, AdjList) :- findall(Node-Neighbors, (member(Node, Edges), findall(Neighbor, member(Node-Neighbor, Edges), Neighbors)), AdjList).
+```
+
+84. Camino de un nodo a otro en un grafo.
+```prolog
+% Encuentra un camino entre dos nodos en un grafo.
+% El grafo se da como una lista de aristas.
+path(Graph, A, B, Path) :- travel(A, B, [A], Q, Graph), reverse(Q, Path).
+
+% Función auxiliar para encontrar un camino.
+travel(A, B, P, [B|P], _) :- edge(A, B).
+travel(A, B, Visited, Path, Graph) :- edge(A, C), C ≠ B,  B, \u+member(C, Visited), travel(C, B, [C|Visited], Path, Graph).
+```
+
+85. Ciclo desde un nodo dado.
+```prolog
+% Encuentra un ciclo en un grafo comenzando desde un nodo dado.
+cycle(Graph, Start, Cycle) :- path(Graph, Start, Start, Cycle), length(Cycle, Len), Len > 2.
+```
+
+86. Construir todos los árboles generadores de un grafo.
+```prolog
+% Encuentra todos los árboles generadores de un grafo dado.
+s_tree(Graph, Tree) :- subset(Graph, Tree), is_tree(Tree), is_connected(Tree).
+
+% Verifica si un conjunto de aristas forma un árbol.
+is_tree(Graph).
+```
+
+87. Árbol generador mínimo de un grafo etiquetado.
+```prolog
+% Construye el árbol generador mínimo de un grafo etiquetado.
+ms_tree(Graph, Tree, Cost).
+```
+
+88. Isomorfismo de grafos.
+```prolog
+% Verifica si dos grafos son isomorfos.
+isomorphic(G1, G2).
+```
+
+89. Determinar el grado de un nodo y la coloración del grafo.
+```prolog
+% Determina el grado de un nodo en un grafo.
+degree(Graph, Node, Degree).
+```
+
+90. Problema de las ocho reinas.
+```prolog
+% Soluciona el problema de las ocho reinas.
+eight_queens(Board).
+```
+
+91. Problema del paseo del caballo.
+```prolog
+% Encuentra un paseo del caballo en un tablero NxN.
+knights_tour(N, Path).
+```
+
+92. Conjetura de Von Koch.
+```prolog
+% Soluciona la conjetura de Von Koch.
+von_koch(Tree).
+```
+
+93. Puzzle aritmético.
+```prolog
+% Resuelve un puzzle aritmético insertando operadores entre números.
+arithmetic_puzzle(Numbers, Result).
+```
+
+94. Generar grafos simples K-regulares.
+```prolog
+% Genera grafos K-regulares con N nodos.
+k_regular_graph(N, K, Graph).
+```
+
+95. Números escritos en palabras en inglés.
+```prolog
+% Convierte un número en su representación en palabras en inglés.
+number_words(Number, Words).
+```
+
+96. Comprobador de sintaxis.
+```prolog
+% Comprueba si una cadena es un identificador válido según una gramática dada.
+identifier(String).
+```
+
+97. Sudoku.
+```prolog
+% Resuelve un puzzle de Sudoku.
+sudoku(Puzzle, Solution).
+```
+
+98. Nonogramas.
+```prolog
+% Resuelve un puzzle de nonogramas.
+nonogram(Rows, Cols, Solution).
+```
+
+99. Puzzle de crucigrama.
+```prolog
+% Resuelve un puzzle de crucigrama dado un conjunto de palabras y una cuadrícula.
+crossword(Words, Grid).
+```
+
+
