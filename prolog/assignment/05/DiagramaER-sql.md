@@ -1,3 +1,5 @@
+# REPRESENTACION DIAGRAMA Entidad-Relación (SQL)
+
 Para crear una representación de la base de datos Prolog en términos de un modelo entidad-relación (ER) usando el formato de Mermaid, podemos visualizar las relaciones entre las películas, directores, actores y actrices. Este modelo incluye las entidades y sus atributos, así como las relaciones entre ellas.
 
 Aquí te proporciono el código Mermaid para generar un diagrama ER que modela la base de datos del código Prolog convertido a una estructura de base de datos SQL:
