@@ -1,7 +1,7 @@
 **Lista de Problemas en Prolog para Prácticas de Laboratorio**
 
 
-BAsados en: https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/
+BAsados en: https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/ hay una serie de errores en las nuevas propuestas a la mitad problemas 50 en adelante para ajustarlas segun correcponda por el estudiante.
 
 1. Encontrar el último elemento de una lista.
 ```prolog
