@@ -16,5 +16,5 @@ https://www.figma.com/board/zurz6hPQKMtLATQTQ66YBv/Prolog-CheatSheet?node-id=1-7
 
 1.- Curso un poco mas visual de Prolog, para principiantes.
     
-    [Curso de prolog](https://athena.ecs.csus.edu/~mei/logicp/home.html)
+    ![Curso de prolog](https://athena.ecs.csus.edu/~mei/logicp/home.html)
 
