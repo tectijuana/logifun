@@ -1,6 +1,9 @@
 
 # POSTER  de Prolog
 
+Require de participación para la elaboracion del poster del lenguaje de Prolog
+
+
 ![prolog copy](https://github.com/user-attachments/assets/00b39dff-da3c-4c1e-82f9-4759ade5b1ec)
 
 
@@ -16,5 +19,5 @@ https://www.figma.com/board/zurz6hPQKMtLATQTQ66YBv/Prolog-CheatSheet?node-id=1-7
 
 1.- Curso un poco mas visual de Prolog, para principiantes.
     
-    ![Curso de prolog](https://athena.ecs.csus.edu/~mei/logicp/home.html)
+https://athena.ecs.csus.edu/~mei/logicp/home.html
 
