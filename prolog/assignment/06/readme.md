@@ -1,4 +1,7 @@
 
+![cooltext468269799784791](https://github.com/user-attachments/assets/fe0bcce9-af1f-415a-a7d2-51dfff21741c)
+
+
  
  Estos ejercicios están diseñados para mostrar el poder de Prolog en diversas áreas como recursión, listas, lógica y resolución de problemas.
 
