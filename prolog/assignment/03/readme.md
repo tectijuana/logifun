@@ -492,8 +492,6 @@ atlevel(t(X, _, _), 1, [X]).
 atlevel(t(_, L, R), N, Nodes) :- N > 1, N1 is N - 1, atlevel(L, N1, LN), atlevel(R, N1, RN), append(LN, RN, Nodes).
 ```
 
-**Problemas en Prolog para Prácticas de Laboratorio (del 56 al 66)**
-
 56. Construir un árbol binario completo.
 ```prolog
 % Construye un árbol binario completo con N nodos.
