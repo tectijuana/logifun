@@ -94,9 +94,5 @@ https://www.figma.com/board/zurz6hPQKMtLATQTQ66YBv/Prolog-CheatSheet?node-id=1-7
 Esta actividad no solo fortalecerá su comprensión de Prolog, sino que también les permitirá mejorar sus habilidades de colaboración y diseño. ¡Diviértanse y usen su creatividad para crear un póster que inspire a otros a explorar el fascinante mundo de Prolog!
 
 
-![cooltext468270093284454](https://github.com/user-attachments/assets/95ed7198-ef85-473a-a082-d43afd1bb630)
 
-1.- Curso un poco mas visual de Prolog, para principiantes.
-    
-https://athena.ecs.csus.edu/~mei/logicp/home.html
 
