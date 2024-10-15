@@ -577,7 +577,8 @@ complete_binary_tree(N, t('x', L, R)) :- N > 0, N1 is N - 1, divide(N1, NL, NR),
 divide(N, N1, N2) :- N1 is N // 2, N2 is N - N1.
 
 ```
-![Screenshot 2024-10-14 at 8 23 47 p m](https://github.com/user-attachments/assets/59f85a0e-2201-4e9f-a555-0850013c26ed)
+![p64](https://github.com/user-attachments/assets/c14e6a9a-b7de-4ab4-a54f-1a62a57782c1)
+
 
 
 ### Explicación
