@@ -458,6 +458,8 @@ El árbol `T1` tiene la siguiente estructura:
 - Los nodos `d`, `e`, `g` no tienen hijos, lo que significa que son hojas del árbol.
 
 ---
+![p65](https://github.com/user-attachments/assets/5eb590ec-4dfb-4fe9-8c80-91d9c38d6f6e)
+
 
 45. Comprobar si un término dado representa un árbol binario.
 ```prolog
@@ -467,6 +469,7 @@ istree(nil).
 istree(t(_, L, R)) :- istree(L), istree(R).
 ```
 ---
+![p66](https://github.com/user-attachments/assets/797a4a0e-44ae-4113-9a87-29d9f9026077)
 
 
 46. Construir árboles binarios completamente equilibrados.
