@@ -192,7 +192,8 @@ Este diagrama te ayudará a visualizar mejor las conexiones familiares que hemos
 
 ### Rúbrica de Evaluación
 
-- **60%**: Grabación **ASCIINEMA** en la que realices una consulta donde apareces como descendiente dentro de tu árbol genealógico. Debes demostrar la consulta ejecutándose correctamente en tu entorno.
+- **50%**: Grabación **ASCIINEMA** en la que realices una consulta donde apareces como descendiente dentro de tu árbol genealógico. Debes demostrar la consulta ejecutándose correctamente en tu entorno.
   
-- **40%**: **Encabezado y comentarios** del código en el Gist. El programa debe estar bien estructurado, con explicaciones claras de los hechos y reglas que utilizaste para modelar tu familia.
+- **30%**: **Encabezado y comentarios** del código en el Gist. El programa debe estar bien estructurado, con explicaciones claras de los hechos y reglas que utilizaste para modelar tu familia.
 
+- **20%**: **Diagrama mermaid.live** codigo mermaid.live para la graficacion de las relaciones familiares, y aprender de codigo-a-diagrama para las ilustraciones.
