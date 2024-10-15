@@ -24,8 +24,7 @@ Proveer a los estudiantes de las bases teóricas y prácticas necesarias para la
 - **Tema 2.4:** Evaluación perezosa (Lazy Evaluation)
 - **Tema 2.5:** Aplicaciones de la programación funcional
 
-
-
+![prolog copy-2](https://github.com/user-attachments/assets/90192e5b-89ae-47b0-91f9-6e5269f6b95e)
 
 
 
