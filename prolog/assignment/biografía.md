@@ -7,3 +7,7 @@ https://athena.ecs.csus.edu/~mei/logicp/home.html
 2.- GNU Prolog 
 
 http://www.gprolog.org
+
+2.- Mermaid JS para diagramas
+
+http://www.mermaid.live
