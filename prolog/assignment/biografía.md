@@ -3,3 +3,7 @@
 1.- Curso un poco mas visual de Prolog, para principiantes.
     
 https://athena.ecs.csus.edu/~mei/logicp/home.html
+
+2.- GNU Prolog 
+
+http://www.gprolog.org
