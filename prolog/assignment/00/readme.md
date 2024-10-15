@@ -134,28 +134,48 @@ Aquí tienes el diagrama en formato **Mermaid** para los datos del árbol geneal
 
 ```mermaid
 graph TD;
-    %% Definición de las relaciones de padre
+
+    %% Relaciones de padre e hijo
     Pablo --> Juan;
     Pablo --> Marcela;
     Juan --> María;
     Carlos --> Débora;
+
+    %% Relaciones de abuelo
+    Pablo -- abuelo --> María; 
     
-    %% Definición de las relaciones de hermanos
-    Pablo --- Juan;
-    Pablo --- Marcela;
+    %% Relaciones de hermanos
+    Juan -- hermano --> Marcela;
+
+    %% Relaciones familiares (padre/hijo, abuelo, hermano)
+    Pablo -- familiar --> María;
+    Pablo -- familiar --> Marcela;
+    Juan -- familiar --> Marcela;  
+    Débora -- familiar --> Carlos; 
+
 ```
 
 ```bash
 graph TD;
-    %% Definición de las relaciones de padre
+
+    %% Relaciones de padre e hijo
     Pablo --> Juan;
     Pablo --> Marcela;
     Juan --> María;
     Carlos --> Débora;
+
+    %% Relaciones de abuelo
+    Pablo -- abuelo --> María; %% Pablo es abuelo de María
     
-    %% Definición de las relaciones de hermanos
-    Pablo --- Juan;
-    Pablo --- Marcela;
+    %% Relaciones de hermanos
+    Juan -- hermano --> Marcela;
+
+    %% Relaciones familiares (padre/hijo, abuelo, hermano)
+    Pablo -- familiar --> María;
+    Pablo -- familiar --> Marcela;
+    Juan -- familiar --> Marcela;  %% Juan y Marcela son familiares porque son hermanos
+    Débora -- familiar --> Carlos; %% Débora y Carlos son familiares (padre-hija)
+
 ```
 Este diagrama está organizado de la siguiente forma:
 
