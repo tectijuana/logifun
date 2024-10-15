@@ -285,6 +285,7 @@ coprime(X, Y) :- gcd(X, Y, 1).
 33. Calcular la función totiente de Euler phi(m).
 ```prolog
 % Calcula la función totiente de Euler, que cuenta cuántos números menores que M son coprimos con M.
+% https://es.wikipedia.org/wiki/Función_φ_de_Euler
 totient(1, 1).
 totient(M, Phi) :- M > 1, totient_acc(M, M, 0, Phi).
 
@@ -315,6 +316,7 @@ prime_factors_mult(N, L) :- prime_factors(N, F), encode(F, L).
 36. Calcular la función totiente de Euler phi(m) mejorada.
 ```prolog
 % Calcula la función totiente usando los factores primos con multiplicidad para mejorar la eficiencia.
+% https://es.wikipedia.org/wiki/Función_φ_de_Euler
 totient_improved(N, Phi) :- prime_factors_mult(N, F), totient_phi(F, Phi).
 
 totient_phi([], 1).
@@ -336,6 +338,7 @@ prime_list(Low, High, Primes) :- findall(P, (between(Low, High, P), is_prime(P))
 39. Conjetura de Goldbach.
 ```prolog
 % Encuentra dos números primos que sumen un número par dado según la conjetura de Goldbach.
+% https://es.wikipedia.org/wiki/Conjetura_de_Goldbach
 goldbach(N, [P1, P2]) :- N > 2, N mod 2 =:= 0, prime_list(2, N, Primes), member(P1, Primes), P2 is N - P1, is_prime(P2).
 ```
 
@@ -344,7 +347,8 @@ goldbach(N, [P1, P2]) :- N > 2, N mod 2 =:= 0, prime_list(2, N, Primes), member(
 % Encuentra las composiciones de Goldbach para todos los números pares dentro de un rango.
 goldbach_list(Low, High, L) :- findall([N, P1, P2], (between(Low, High, N), N mod 2 =:= 0, goldbach(N, [P1, P2])), L).
 ```
-**Problemas en Prolog para Prácticas de Laboratorio (del 41 al 60)**
+
+# Lógica and Código
 
 41. Tabla de verdad para expresiones lógicas.
 ```prolog
@@ -371,6 +375,7 @@ equ(A, B) :- A, B; \+ A, \+ B.
 43. Código Gray.
 ```prolog
 % Genera el código Gray de N bits.
+% https://es.wikipedia.org/wiki/Código_Gray
 % La secuencia de código Gray es una secuencia binaria en la que dos valores consecutivos difieren en solo un bit.
 gray(1, ['0', '1']).
 gray(N, C) :- N > 1, N1 is N - 1, gray(N1, C1), maplist(atom_concat('0'), C1, C0), reverse(C1, C1R), maplist(atom_concat('1'), C1R, C1G), append(C0, C1G, C).
@@ -379,6 +384,7 @@ gray(N, C) :- N > 1, N1 is N - 1, gray(N1, C1), maplist(atom_concat('0'), C1, C0
 44. Código Huffman.
 ```prolog
 % Genera un árbol de Huffman dado un conjunto de frecuencias.
+% https://es.wikipedia.org/wiki/Codificación_Huffman
 % El algoritmo de Huffman se utiliza para la compresión de datos, construyendo un árbol binario óptimo para la codificación.
 huffman(Fs, Hs) :- length(Fs, Len), Len > 1, sort(2, @=<, Fs, Sorted), huffman_tree(Sorted, Hs).
 
@@ -386,6 +392,72 @@ huffman(Fs, Hs) :- length(Fs, Len), Len > 1, sort(2, @=<, Fs, Sorted), huffman_t
 huffman_tree([fr(X, _) | []], hc(X, '0')).
 huffman_tree([fr(_, _) | [fr(_, _) | _]], _).
 ```
+---
+
+Un **árbol binario** es una estructura de datos en la que cada nodo tiene, a lo sumo, dos hijos: un subárbol izquierdo y un subárbol derecho. En Prolog, los árboles binarios se representan utilizando el término compuesto `t(X, L, R)`, donde:
+- `X` es la raíz del árbol.
+- `L` es el subárbol izquierdo.
+- `R` es el subárbol derecho.
+
+El **árbol vacío** se representa con el átomo `nil`. Para este ejercicio, debes escribir un predicado en Prolog llamado `istree/1`, el cual verifica si un término es un árbol binario válido, siguiendo estas reglas:
+1. Si el término es `nil`, es un árbol válido.
+2. Si el término es `t(X, L, R)`, entonces `L` y `R` también deben ser árboles válidos (esto se evalúa de forma recursiva).
+
+### Implementación en Prolog
+
+A continuación se presenta la implementación del predicado `istree/1`:
+
+```prolog
+% El árbol vacío es válido
+istree(nil).
+
+% Un árbol no vacío es válido si el subárbol izquierdo y el derecho también son árboles binarios
+istree(t(_, L, R)) :-
+    istree(L),
+    istree(R).
+```
+
+### Evaluación
+
+Vamos a probar el predicado `istree/1` con los ejemplos proporcionados:
+
+1. Verificar si `t(a, t(b, nil, nil), nil)` es un árbol binario:
+   ```prolog
+   ?- istree(t(a, t(b, nil, nil), nil)).
+   Yes.
+   ```
+   **Explicación**: Es un árbol binario válido porque sigue la estructura `t(X, L, R)`, donde ambos hijos son subárboles válidos (uno es `nil` y el otro es un subárbol correcto).
+
+2. Verificar si `t(a, t(b, nil), nil)` es un árbol binario:
+   ```prolog
+   ?- istree(t(a, t(b, nil), nil)).
+   No.
+   ```
+   **Explicación**: No es un árbol binario válido porque `t(b, nil)` no tiene el formato adecuado (le falta un tercer argumento).
+
+### Diagrama de Grafos (Mermaid)
+
+A continuación, mostramos el árbol `T1 = t(a,t(b,t(d,nil,nil),t(e,nil,nil)),t(c,nil,t(f,t(g,nil,nil),nil)))` representado en un diagrama de grafos:
+
+```mermaid
+graph TD;
+    A[a] --> B[b];
+    A[a] --> C[c];
+    B[b] --> D[d];
+    B[b] --> E[e];
+    C[c] --> F[f];
+    F[f] --> G[g];
+```
+
+### Explicación del Diagrama
+
+El árbol `T1` tiene la siguiente estructura:
+- El nodo raíz es `a`, que tiene dos hijos: `b` y `c`.
+- El nodo `b` tiene dos hijos: `d` y `e`.
+- El nodo `c` tiene un hijo `f`, que a su vez tiene un hijo `g`.
+- Los nodos `d`, `e`, `g` no tienen hijos, lo que significa que son hojas del árbol.
+
+---
 
 45. Comprobar si un término dado representa un árbol binario.
 ```prolog
@@ -394,6 +466,8 @@ huffman_tree([fr(_, _) | [fr(_, _) | _]], _).
 istree(nil).
 istree(t(_, L, R)) :- istree(L), istree(R).
 ```
+---
+
 
 46. Construir árboles binarios completamente equilibrados.
 ```prolog
@@ -501,7 +575,96 @@ complete_binary_tree(N, t('x', L, R)) :- N > 0, N1 is N - 1, divide(N1, NL, NR),
 
 % Divide el número de nodos entre los subárboles izquierdo y derecho.
 divide(N, N1, N2) :- N1 is N // 2, N2 is N - N1.
+
 ```
+![Screenshot 2024-10-14 at 8 23 47 p m](https://github.com/user-attachments/assets/59f85a0e-2201-4e9f-a555-0850013c26ed)
+
+
+### Explicación
+
+El problema consiste en generar un **algoritmo de distribución** para un árbol binario dado, de manera que cada nodo se posicione en una **cuadrícula** en base a dos reglas:
+1. La coordenada **X** del nodo se determina por su posición en el recorrido *inorder* (inorden) del árbol.
+2. La coordenada **Y** del nodo corresponde a su **profundidad** en el árbol.
+
+Para representar el árbol binario, extendemos el término usual `t(X,L,R)` a `t(W,X,Y,L,R)`, donde:
+- `W` es el valor del nodo.
+- `X` es la coordenada horizontal (determinada por la posición en el recorrido inorder).
+- `Y` es la coordenada vertical (determinada por la profundidad).
+- `L` y `R` son los subárboles izquierdo y derecho, respectivamente.
+
+El objetivo es definir el predicado `layout_binary_tree/2`, que convierte un árbol binario dado en su versión posicionada.
+
+A continuación se presenta la implementación del predicado `layout_binary_tree/2`:
+
+```prolog
+% layout_binary_tree(T, PT) :- PT es el árbol binario "posicionado" obtenido del árbol T.
+layout_binary_tree(T, PT) :-
+    layout_binary_tree(T, 1, 1, _, PT).
+
+% layout_binary_tree(T, X0, Y, X1, PT)
+% T: Árbol de entrada.
+% X0: Coordenada X actual (en el recorrido inorder).
+% Y: Profundidad actual del nodo.
+% X1: Coordenada X al final del recorrido inorder.
+% PT: Árbol binario "posicionado".
+layout_binary_tree(nil, X, _, X, nil).
+layout_binary_tree(t(W, L, R), X0, Y, X1, t(W, X, Y, PL, PR)) :-
+    Y1 is Y + 1,
+    layout_binary_tree(L, X0, Y1, X, PL),
+    X2 is X + 1,
+    layout_binary_tree(R, X2, Y1, X1, PR).
+```
+
+### Explicación del Código
+
+1. **Predicado principal** `layout_binary_tree/2`:
+   - Toma como entrada un árbol binario `T` y devuelve el árbol "posicionado" `PT`.
+   - Llama al predicado auxiliar con las coordenadas iniciales `X=1` (inicializa el contador de la posición inorder) y `Y=1` (la profundidad inicial es 1).
+
+2. **Caso base**:
+   - Si el nodo es `nil`, entonces se devuelve `nil` y no se modifica la coordenada X.
+
+3. **Caso recursivo**:
+   - Para un nodo `t(W, L, R)`, primero se procesa el subárbol izquierdo `L`, luego el nodo actual, y finalmente el subárbol derecho `R`.
+   - **X0** es la coordenada actual en el recorrido inorder.
+   - **Y** es la profundidad actual del nodo.
+   - Se incrementa la profundidad en 1 para los subárboles (`Y1 is Y + 1`).
+   - Se posiciona el nodo en `(X, Y)` y se continua procesando el subárbol derecho.
+
+### Ejemplo de uso
+
+```prolog
+% Definición del árbol binario original:
+%          a
+%         / \
+%        b   c
+%       / \   \
+%      d   e   f
+
+T = t(a, t(b, t(d, nil, nil), t(e, nil, nil)), t(c, nil, t(f, nil, nil))).
+
+% Ejecutar la consulta para generar el árbol posicionado:
+?- layout_binary_tree(T, PT).
+
+% Resultado:
+PT = t(a, 4, 1,
+        t(b, 2, 2,
+            t(d, 1, 3, nil, nil),
+            t(e, 3, 3, nil, nil)),
+        t(c, 6, 2,
+            nil,
+            t(f, 7, 3, nil, nil))).
+```
+
+### Explicación del Resultado
+
+El árbol posicionado resultante tendrá las siguientes coordenadas:
+- El nodo `a` está en la posición `(4,1)`.
+- El nodo `b` está en la posición `(2,2)`, con su hijo izquierdo `d` en `(1,3)` y su hijo derecho `e` en `(3,3)`.
+- El nodo `c` está en la posición `(6,2)`, con su hijo derecho `f` en `(7,3)`.
+
+Este resultado sigue el recorrido inorder para calcular las posiciones horizontales, y utiliza la profundidad para las posiciones verticales.
+---
 
 57. Representación en cadena de un árbol binario.
 ```prolog
