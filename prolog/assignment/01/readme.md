@@ -176,6 +176,9 @@ Who = wills
 Si escribes otro `;`, Prolog responderá `no`, indicando que no hay más soluciones.
 
 ---
+![Cool Text - Depuracin con trace 468402331397233](https://github.com/user-attachments/assets/f5198957-af1e-49ad-921e-756244e01ff0)
+
+
 
 #### 12. Depuración con `trace`
 
