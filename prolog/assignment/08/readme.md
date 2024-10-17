@@ -122,3 +122,139 @@ reparaciones_tecnico(TecnicoID, ReparacionID, FechaReparacion, DescripcionProble
   ```
 
 Este código puede extenderse para cubrir más funcionalidades, como agregar, eliminar o modificar datos de las entidades, como lo conocemos el CRUD en base de datos.
+
+---
+# GRAFOS 
+```mermaid
+graph TD;
+    %% Definición de relaciones principales del sistema en Prolog
+
+    %% Clientes y celulares conectados a través de ventas y reparaciones
+    subgraph Clientes
+        C1["Juan Pérez"]
+        C2["Ana Gómez"]
+        C3["Carlos Ramírez"]
+        C4["Lucía Mendoza"]
+        C5["Pedro López"]
+        C6["María Martínez"]
+        C7["Roberto Sánchez"]
+        C8["Sofía Hernández"]
+        C9["Andrés Vega"]
+        C10["Elena Ríos"]
+    end
+
+    subgraph Celulares
+        M1["iPhone 13"]
+        M2["Galaxy S21"]
+        M3["Xiaomi Mi 11"]
+        M4["Google Pixel 6"]
+        M5["OnePlus 9 Pro"]
+        M6["Sony Xperia 5 III"]
+        M7["Huawei P40"]
+        M8["Motorola Edge 20"]
+        M9["Nokia G50"]
+        M10["LG Wing"]
+    end
+
+    subgraph Ventas
+        V1["Venta 1"]
+        V2["Venta 2"]
+        V3["Venta 3"]
+        V4["Venta 4"]
+        V5["Venta 5"]
+        V6["Venta 6"]
+        V7["Venta 7"]
+        V8["Venta 8"]
+        V9["Venta 9"]
+        V10["Venta 10"]
+    end
+
+    subgraph Reparaciones
+        R1["Reparación 1"]
+        R2["Reparación 2"]
+        R3["Reparación 3"]
+        R4["Reparación 4"]
+        R5["Reparación 5"]
+        R6["Reparación 6"]
+        R7["Reparación 7"]
+        R8["Reparación 8"]
+        R9["Reparación 9"]
+        R10["Reparación 10"]
+    end
+
+    subgraph Técnicos
+        T1["Carlos - Pantallas"]
+        T2["Laura - Baterías"]
+        T3["Miguel - Software"]
+        T4["Sofía - Cámaras"]
+        T5["Jorge - Conectores"]
+        T6["Ana - Altavoces"]
+        T7["Luis - Sensores"]
+        T8["María - Problemas eléctricos"]
+        T9["Pedro - Microchips"]
+        T10["Silvia - Pantallas"]
+    end
+
+    %% Relaciones de Ventas
+    C1 --> V1
+    V1 --> M1
+    C2 --> V2
+    V2 --> M2
+    C3 --> V3
+    V3 --> M3
+    C4 --> V4
+    V4 --> M4
+    C5 --> V5
+    V5 --> M5
+    C6 --> V6
+    V6 --> M6
+    C7 --> V7
+    V7 --> M7
+    C8 --> V8
+    V8 --> M8
+    C9 --> V9
+    V9 --> M9
+    C10 --> V10
+    V10 --> M10
+
+    %% Relaciones de Reparaciones y Técnicos
+    C1 --> R1
+    R1 --> M1
+    R1 --> T1
+
+    C2 --> R2
+    R2 --> M2
+    R2 --> T2
+
+    C3 --> R3
+    R3 --> M3
+    R3 --> T3
+
+    C4 --> R4
+    R4 --> M4
+    R4 --> T6
+
+    C5 --> R5
+    R5 --> M5
+    R5 --> T4
+
+    C6 --> R6
+    R6 --> M6
+    R6 --> T5
+
+    C7 --> R7
+    R7 --> M7
+    R7 --> T1
+
+    C8 --> R8
+    R8 --> M8
+    R8 --> T2
+
+    C9 --> R9
+    R9 --> M9
+    R9 --> T7
+
+    C10 --> R10
+    R10 --> M10
+    R10 --> T7
+```
