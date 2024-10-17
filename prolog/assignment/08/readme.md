@@ -258,6 +258,9 @@ graph TD;
     R10 --> M10
     R10 --> T7
 ```
-<img width="300" alt="SQL" src="https://github.com/user-attachments/assets/8d0816fe-d48c-45f5-a8e5-a52c98f1edae">
-[![SQL ](https://github.com/user-attachments/assets/8d0816fe-d48c-45f5-a8e5-a52c98f1edae)]([https://el-enlace-deseado.com](readme.md))
+
+
+[![Screenshot 2024-10-17 at 8 38 02 am](https://github.com/user-attachments/assets/8d0816fe-d48c-45f5-a8e5-a52c98f1edae)](https://el-enlace-deseado.com)
+
+
 
