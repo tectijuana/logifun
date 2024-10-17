@@ -6,9 +6,6 @@ Para modelar el esquema de la tienda de celulares en Prolog, es necesario repres
 A continuación se muestra el código Prolog basado en el diagrama ER proporcionado:
 
 ```prolog
-Para generar 50 entradas diversas a partir del código proporcionado, ampliaré las bases de datos de clientes, celulares, ventas, reparaciones, técnicos, y asignaciones de técnicos a reparaciones. Aquí tienes una versión con 10 entradas por cada sección. Puedes ampliar las secciones siguiendo el mismo patrón si necesitas más datos.
-
-```prolog
 % Definición de clientes: cliente(ClienteID, Nombre, Apellido, Email, Telefono, Direccion).
 cliente(1, 'Juan', 'Pérez', 'juan.perez@mail.com', '555-1234', 'Calle Falsa 123').
 cliente(2, 'Ana', 'Gómez', 'ana.gomez@mail.com', '555-5678', 'Av. Siempreviva 742').
@@ -95,9 +92,7 @@ reparaciones_cliente(ClienteID, ReparacionID, FechaReparacion, DescripcionProble
 reparaciones_tecnico(TecnicoID, ReparacionID, FechaReparacion, DescripcionProblema, CostoReparacion, ClienteID, ModeloID) :-
     reparacion_tecnico(ReparacionID, TecnicoID),
     reparacion(ReparacionID, FechaReparacion, DescripcionProblema, CostoReparacion, ClienteID, ModeloID).
-```
 
-Este código añade entradas adicionales a las tablas de clientes, celulares, ventas, reparaciones y técnicos, asegurando diversidad en los datos. Cada tabla ahora tiene 10 entradas, y las relaciones entre las tablas se mantienen correctamente. Puedes expandir el código con más datos siguiendo el mismo formato.
 ```
 
 ### Explicación:
