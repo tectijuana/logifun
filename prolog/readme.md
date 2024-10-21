@@ -1,3 +1,6 @@
+[![asciicast](https://asciinema.org/a/682350.svg)](https://asciinema.org/a/682350)
+
+
 ### ¡Bienvenido al Curso de Prolog para Ingeniería en Sistemas Computacionales! 🎉
 
 ---
@@ -77,6 +80,8 @@ Los ejercicios se encuentran organizados en carpetas por temas, desde los más b
 Este repositorio está en constante mejora. Si encuentras algún error, tienes sugerencias, o deseas contribuir con nuevos ejercicios o ejemplos, no dudes en realizar un **pull request** o abrir un **issue**.
 
 ---
+
+
 
 ### ¡Manos a la obra! 🚀
 
