@@ -1,6 +1,6 @@
 # Proyecto de corrida de Programas en Prolog
 
-Este repositorio contiene 10 programas escritos en Prolog. A continuación, se proporcionan instrucciones sobre cómo clonar el repositorio, construir y ejecutar cada programa individualmente utilizando un Makefile y CMake.
+Esta simulación de repositorio supongamos contiene 10 programas escritos en Prolog. A continuación, se proporcionan instrucciones sobre cómo clonar el repositorio, construir y ejecutar cada programa individualmente utilizando un Makefile y CMake.
 
 ## Prerrequisitos
 
