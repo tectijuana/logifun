@@ -88,7 +88,9 @@ clean:
 
 ## Notas Adicionales
 
+- **Permisos de archivos**: En Windows, los permisos de archivos funcionan de manera diferente. Si ejecutas scripts que requieren permisos de ejecución, asegúrate de ajustar los permisos apropiadamente en WSL o el entorno que estés utilizando.
+- 
 - **Compatibilidad**: Estos pasos asumen que estás trabajando en un entorno Unix-like. Los comandos pueden variar en Windows.
 - **Ayuda**: Si necesitas ayuda adicional con Prolog o CMake, consulta la documentación oficial o busca recursos en línea.
-
----
+- **Rutas de archivos**: Las rutas en Windows usan \ en lugar de /. Si adaptas el Makefile, ten esto en cuenta.
+  
