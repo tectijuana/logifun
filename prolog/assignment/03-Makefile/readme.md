@@ -92,5 +92,3 @@ clean:
 - **Ayuda**: Si necesitas ayuda adicional con Prolog o CMake, consulta la documentación oficial o busca recursos en línea.
 
 ---
-
-¡Disfruta explorando los programas en Prolog!
