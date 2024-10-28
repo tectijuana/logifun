@@ -1,7 +1,7 @@
 
 ![Lego Teacher Microbit](https://github.com/user-attachments/assets/b480c31a-fe07-44ae-91d2-ec6fae4125de)
 
-Este ejemplo demostrará cómo utilizar la micro:bit para recolectar datos de sensores y procesarlos con Prolog para resolver problemas lógicos, lo cual puede enriquecer el material de enseñanza sobre sistemas lógicos.
+Ejemplo demostrará cómo utilizar la micro:bit para recolectar datos de sensores y procesarlos con Prolog para resolver problemas lógicos, lo cual puede enriquecer el material de enseñanza sobre sistemas lógicos.
 
 ## **Requisitos Previos**
 
@@ -174,8 +174,3 @@ Puedes ampliar este proyecto agregando más sensores a la micro:bit y definiendo
 3. **Optimización:**
    - Para proyectos más avanzados, podrías implementar comunicación bidireccional, donde Prolog no solo recibe datos de la micro:bit sino que también envía comandos para controlar dispositivos conectados.
 
-## **Conclusión**
-
-Este ejemplo demuestra cómo integrar la micro:bit versión 2 con Prolog en un entorno Windows para crear un sistema lógico que responde a datos del mundo real. Este enfoque no solo refuerza conceptos de programación lógica con Prolog, sino que también introduce a los estudiantes al trabajo con hardware y comunicación serial, proporcionando una experiencia educativa completa y práctica.
-
-Espero que este ejemplo te sea útil para mejorar el material de enseñanza sobre sistemas lógicos con Prolog. Si tienes alguna pregunta adicional o necesitas más detalles sobre algún paso, no dudes en preguntar.
