@@ -15,7 +15,7 @@ Ejemplo demostrará cómo utilizar la micro:bit para recolectar datos de sensore
      - **Descarga e instalación:** [SWI-Prolog Descargar](https://www.swi-prolog.org/Download.html)
    - **Editor de texto o IDE para Prolog:** Por ejemplo, **SWI-Prolog IDE** que viene con la instalación de SWI-Prolog.
    - **Entorno de desarrollo para micro:bit:** Puedes usar **Mu Editor**, **Microsoft MakeCode** o **Thonny** si prefieres programar en MicroPython.
-     - **Descarga de Mu Editor:** [Mu Editor Descargar](https://codewith.mu/en/download)
+     - **Por compatibilíceles :** [Microbit Python Web Editor](https://python.microbit.org)
 
 ## **Ejemplo de Proyecto: Monitor de Temperatura y Lógica de Decisión**
 
@@ -27,7 +27,7 @@ Vamos a programar la micro:bit para leer la temperatura y enviar los datos a tra
 
 **Ejemplo en MicroPython:**
 
-1. Abre **Mu Editor** y selecciona el modo **MicroPython**.
+1. Abre **Microbit Python Web Editor** y selecciona el modo **MicroPython**.
 2. Escribe el siguiente código:
 
 ```python
@@ -42,7 +42,7 @@ while True:
     sleep(1000)  # Espera 1 segundo antes de la siguiente lectura
 ```
 
-3. Guarda y descarga el programa a la micro:bit conectada vía USB.
+3. Guarda y descarga el programa a la micro:bit conectada vía USB, esto configurará la microbit, quedado ciclado en el envio de temperatura a serial.
 
 **Explicación:**
 - La micro:bit lee la temperatura integrada.
