@@ -1,7 +1,7 @@
 ### Películas Famosas para ejercios de Prolog
 
 **Autor**: Rene Solis  
-**Título**: Base de datos de películas
+**Título**: Base de datos de películas (prolog) y su conversion SQL gestor básico.
 
 ---
 
@@ -136,6 +136,13 @@ Las siguientes reglas se pueden agregar para consultas más avanzadas:
    ```
 -----
 
-INTRUCCION.
+EVIDNCIA DE LOGRO:
+1. Accer a https://sqlfiddle.com/ o AWSAcademy como se sea productivo.
+2. Recrear la base de datos de Peliculas, en un gestor favorito, fácil para Ud.
+3. Elabore por lo menos 5 consultas de la consola SQL que ofrece ese portal
+4. Evidencia mixta puede ser ASciinema o Loom, pero no pantallas pues hay interactividad.
+5. Para peliculas o tablas "generativas" use http://www.mockaroo.com
 
-CONVERTA LA BASE DE DATOS DE PELICULAS EN PROLOG A SQL TABLA (CUALQUIER GESTOR) DEPOSITANDO EL .SQL, HACIENDO LAS CONSULTAS EJEMPLIFICADAS, 
+   Pin en el pintarron, tiempo 1 hora.
+
+
