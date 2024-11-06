@@ -2,9 +2,7 @@
 ![Base de Datos](https://github.com/user-attachments/assets/65cf07e5-906f-4fc9-a30b-737a5fba38ae)
 
 
-### Películas Famosas para ejercios de Prolog
-
-**Autor**: Rene Solis  
+# Películas Famosas para ejercios de Prolog
 **Título**: Base de datos de películas (prolog) y su conversion SQL gestor básico.
 
 ---
