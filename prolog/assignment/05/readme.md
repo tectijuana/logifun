@@ -140,13 +140,13 @@ Las siguientes reglas se pueden agregar para consultas más avanzadas:
    ```
 -----
 
-EVIDNCIA DE LOGRO:
+EVIDENCIA DEL LA PRACTICA:
 1. Accer a https://sqlfiddle.com/ o AWSAcademy como se sea productivo.
 2. Recrear la base de datos de Peliculas, en un gestor favorito, fácil para Ud.
 3. Elabore por lo menos 5 consultas de la consola SQL que ofrece ese portal
 4. Evidencia mixta puede ser Asciinema, Loom, pero no pantallas pues hay interactividad.
 5. Para peliculas o tablas "generativas" use http://www.mockaroo.com
 
-   Pin en el pintarron, tiempo 1 hora.
+   Pin en 66115 de IDoceo, tiempo 1 hora.
 
 
