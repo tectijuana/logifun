@@ -151,6 +151,6 @@ https://chatgpt.com/g/g-OCdqpOW8Z-sql-generator
 4. Evidencia mixta puede ser Asciinema, Loom, pero no pantallas pues hay interactividad.
 5. Para peliculas o tablas "generativas" use http://www.mockaroo.com
 
-   Pin en 66115 de IDoceo, tiempo 1 hora.
+   Pin en 87866 de IDoceo, tiempo 1 hora.
 
 
