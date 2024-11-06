@@ -43,7 +43,6 @@
 6. **Backtracking**: Muestra cómo Prolog explora soluciones posibles, retrocede y encuentra soluciones óptimas.
 7. **Lógica Difusa y Algoritmos Genéticos**: Llevan a Prolog a un campo más avanzado, donde se combina con lógica de incertidumbre y técnicas evolutivas para encontrar soluciones aproximadas.
 
-GTP de apoyo 
-https://chatgpt.com/g/g-OCdqpOW8Z-sql-generator
+
 
 Estos ejercicios ayudarán a ejemplificar la potencia de Prolog en la resolución de problemas lógicos y de inferencia, desde problemas básicos hasta problemas más complejos en estructuras de datos y lógica avanzada.
