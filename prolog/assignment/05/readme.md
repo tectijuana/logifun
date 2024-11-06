@@ -140,6 +140,10 @@ Las siguientes reglas se pueden agregar para consultas más avanzadas:
    ```
 -----
 
+GTP de apoyo para SQL
+https://chatgpt.com/g/g-OCdqpOW8Z-sql-generator
+
+
 EVIDENCIA DEL LA PRACTICA:
 1. Accer a https://sqlfiddle.com/ o AWSAcademy como se sea productivo.
 2. Recrear la base de datos de Peliculas, en un gestor favorito, fácil para Ud.
