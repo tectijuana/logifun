@@ -1,7 +1,9 @@
 <img width="997" alt="385100406-80318fd5-2197-497e-8832-36644ea2f40a" src="https://github.com/user-attachments/assets/bfc05dc1-bb94-48e3-85db-e296b07f84e3">
 
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YFUv4_lCBLY?si=dAnNyrzAOvfjzMO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[![Cognify Video](https://img.youtube.com/vi/YFUv4_lCBLY/0.jpg)](https://www.youtube.com/embed/YFUv4_lCBLY?si=dAnNyrzAOvfjzMO8)
+
 ---
 
 ### **Propuesta Práctica para el Proyecto Cognify**
