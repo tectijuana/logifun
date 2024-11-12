@@ -75,15 +75,93 @@ Presentar a los estudiantes el modelo narrativo de Cognify. Explicar cómo el si
 Los estudiantes trabajarán con un dataset generado previamente, que podría incluir:
    - **Ejemplo de datos:**
      ```json
-     {
-       "id": 1,
-       "crimen": "robo",
-       "nivel_empatia": "bajo",
-       "recuerdos_disponibles": ["víctima", "familia", "arrepentimiento"],
-       "resultado_esperado": "rehabilitación exitosa"
-     }
-     ```
+{
+  "id": 2,
+  "crimen": "fraude financiero",
+  "nivel_empatia": "muy bajo",
+  "recuerdos_disponibles": ["impacto económico", "familias afectadas", "arrepentimiento"],
+  "resultado_esperado": "toma de responsabilidad"
+},
+{
+  "id": 3,
+  "crimen": "violencia doméstica",
+  "nivel_empatia": "moderado",
+  "recuerdos_disponibles": ["perspectiva de la víctima", "dolor familiar", "terapia emocional"],
+  "resultado_esperado": "control de impulsos"
+},
+{
+  "id": 4,
+  "crimen": "crimen de odio",
+  "nivel_empatia": "muy bajo",
+  "recuerdos_disponibles": ["diversidad cultural", "consecuencias del odio", "empatía hacia minorías"],
+  "resultado_esperado": "comprensión y respeto"
+},
+{
+  "id": 5,
+  "crimen": "asalto",
+  "nivel_empatia": "bajo",
+  "recuerdos_disponibles": ["dolor físico de la víctima", "miedo experimentado", "apoyo social"],
+  "resultado_esperado": "reducción de la agresión"
+},
+{
+  "id": 6,
+  "crimen": "abuso de poder",
+  "nivel_empatia": "moderado",
+  "recuerdos_disponibles": ["impacto en subordinados", "pérdida de confianza", "consecuencias sociales"],
+  "resultado_esperado": "responsabilidad social"
+},
+{
+  "id": 7,
+  "crimen": "tráfico de drogas",
+  "nivel_empatia": "bajo",
+  "recuerdos_disponibles": ["destrucción de vidas", "perspectiva de víctimas de adicción", "pérdidas familiares"],
+  "resultado_esperado": "empatía y conciencia social"
+},
+{
+  "id": 8,
+  "crimen": "vandalismo",
+  "nivel_empatia": "moderado",
+  "recuerdos_disponibles": ["esfuerzo de la comunidad", "impacto visual y emocional", "arrepentimiento"],
+  "resultado_esperado": "aprecio por el bien común"
+},
+{
+  "id": 9,
+  "crimen": "corrupción política",
+  "nivel_empatia": "muy bajo",
+  "recuerdos_disponibles": ["pérdida de confianza pública", "impacto económico nacional", "arrepentimiento"],
+  "resultado_esperado": "ética personal fortalecida"
+},
+{
+  "id": 10,
+  "crimen": "homicidio culposo",
+  "nivel_empatia": "moderado",
+  "recuerdos_disponibles": ["dolor de la familia de la víctima", "perspectiva de la víctima", "reconciliación interna"],
+  "resultado_esperado": "aceptación y redención"
+},
+{
+  "id": 11,
+  "crimen": "hackeo",
+  "nivel_empatia": "muy bajo",
+  "recuerdos_disponibles": ["consecuencias del robo de datos", "impacto en víctimas de fraude", "remordimiento"],
+  "resultado_esperado": "responsabilidad digital"
+},
+{
+  "id": 12,
+  "crimen": "pedofilia",
+  "nivel_empatia": "muy bajo",
+  "recuerdos_disponibles": ["dolor de las víctimas", "impacto emocional a largo plazo", "consecuencias legales"],
+  "resultado_esperado": "inhibición de impulsos dañinos"
+},
+{
+  "id": 13,
+  "crimen": "canibalismo",
+  "nivel_empatia": "moderado",
+  "recuerdos_disponibles": ["dolor y sufrimiento de la víctima", "impacto en la familia de la víctima", "repudio social"],
+  "resultado_esperado": "rechazo hacia el acto"
+}
 
+
+     ```
 #### **Paso 3: Implementación en Prolog**
 Los estudiantes programarán en Prolog reglas y predicados como:
    - `recuerdo_apropiado(Crimen, NivelEmpatia, Recuerdo).`
