@@ -74,7 +74,7 @@ Presentar a los estudiantes el modelo narrativo de Cognify. Explicar cómo el si
 #### **Paso 2: Generación de Datos**
 Los estudiantes trabajarán con un dataset generado previamente, que podría incluir:
    - **Ejemplo de datos:**
-     ```json
+```json
 {
   "id": 2,
   "crimen": "fraude financiero",
@@ -159,9 +159,7 @@ Los estudiantes trabajarán con un dataset generado previamente, que podría inc
   "recuerdos_disponibles": ["dolor y sufrimiento de la víctima", "impacto en la familia de la víctima", "repudio social"],
   "resultado_esperado": "rechazo hacia el acto"
 }
-
-
-     ```
+```
 #### **Paso 3: Implementación en Prolog**
 Los estudiantes programarán en Prolog reglas y predicados como:
    - `recuerdo_apropiado(Crimen, NivelEmpatia, Recuerdo).`
