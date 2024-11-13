@@ -180,7 +180,7 @@ Guiar una discusión sobre las implicaciones éticas del uso de este tipo de tec
 ### **Entrega Final**
 1. **Código:** Archivo Prolog con las reglas implementadas.
 2. **Reporte:** Análisis de los resultados y reflexión ética.
-3. **Presentación:** Cada grupo presenta un caso específico, explica las decisiones tomadas y defiende los resultados obtenidos.
+3. **Presentación:** Cada "bina" presenta un caso específico, explica las decisiones tomadas y defiende los resultados obtenidos.
 
 ---
 
