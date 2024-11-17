@@ -157,17 +157,4 @@ Ejecutar herramientas de limpieza de disco para eliminar archivos temporales y b
 |: no.
 Gracias por usar el sistema experto. ¡Hasta pronto!
 ```
-
----
-
-### **Características Destacadas**
-
-1. **ASCII Art**:
-   - Hace que el sistema sea más atractivo y memorable para los estudiantes.
-   
-2. **Menú Interactivo**:
-   - Permite a los usuarios navegar fácilmente entre las opciones de diagnóstico y mantenimiento.
-
-3. **Ampliación y Personalización**:
-   - Los estudiantes pueden agregar más problemas, soluciones, y tareas de mantenimiento para extender el sistema.
-
+Agregar mas reglas de las posibles fallas y soluciones en laptops (windows, linux, mac, surface, etc.)
