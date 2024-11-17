@@ -93,6 +93,3 @@ resultado_esperado(3, "reflexión y remordimiento").
 #### **Impacto Social:**
 - Este análisis pone en perspectiva las limitaciones de cualquier sistema de rehabilitación frente a crímenes tan atroces. Es importante considerar que, más allá de la rehabilitación, la prevención, educación y reformas estructurales son clave para evitar que casos como este se repitan.
 
----
-
-Esta simulación ficticia busca ofrecer un marco académico o narrativo, no trivializar la gravedad del caso real. Si necesitas más enfoque en la parte técnica o ética, puedo ampliar cualquiera de las secciones.
