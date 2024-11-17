@@ -3,7 +3,7 @@
 
 ---
 
-### **Idea para la práctica: Simulación del "Lado Oscuro vs. Lado Luminoso"**
+###  "Lado Oscuro vs. Lado Luminoso, de StarWars"**
 
 #### **Descripción**
 Creamos un sistema en **Prolog** para modelar el universo de *Star Wars*. Los estudiantes programarán relaciones entre personajes, habilidades, facciones, y decisiones que afecten si un personaje se une al Lado Oscuro o al Lado Luminoso de la Fuerza.
