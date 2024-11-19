@@ -151,7 +151,7 @@ https://chatgpt.com/g/g-OCdqpOW8Z-sql-generator
 4. Evidencia mixta puede ser Asciinema, Loom, pero no pantallas pues hay interactividad.
 5. Para peliculas o tablas "generativas" use http://www.mockaroo.com
 
-Por: Van Prat
+Por: Van Pratt 24b
 
 [![asciicast](https://asciinema.org/a/xJUvqgoa4E4AcXoe6rlGwx21G.svg)](https://asciinema.org/a/xJUvqgoa4E4AcXoe6rlGwx21G)
 
